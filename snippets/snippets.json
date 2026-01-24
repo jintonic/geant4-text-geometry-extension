@@ -1,0 +1,87 @@
+{
+  "Solid Definition": {
+    "prefix": ":SOLID",
+    "body": [
+      ":SOLID ${1:name} ${2|BOX,TUBE,TUBS,CONE,CONS,TRD,PARA,TRAP,SPHERE,ORB,TORUS,POLYCONE,POLYHEDRA|} ${3:parameters}"
+    ],
+    "description": "Define a solid"
+  },
+  "Box Solid": {
+    "prefix": "BOX",
+    "body": [
+      ":SOLID ${1:boxName} BOX ${2:xHalfLength} ${3:yHalfLength} ${4:zHalfLength}"
+    ],
+    "description": "Define a BOX solid"
+  },
+  "Logical Volume": {
+    "prefix": ":VOLU",
+    "body": [
+      ":VOLU ${1:name} ${2:solidName} ${3:materialName}"
+    ],
+    "description": "Define a logical volume"
+  },
+  "Physical Volume Placement": {
+    "prefix": ":PLACE",
+    "body": [
+      ":PLACE ${1:volumeName} ${2:copyNumber} ${3:parentVolumeName} ${4:rotationMatrixName} ${5:x} ${6:y} ${7:z}"
+    ],
+    "description": "Place a physical volume"
+  },
+  "Simple Material": {
+    "prefix": ":MATE",
+    "body": [
+      ":MATE ${1:name} ${2:Z} ${3:A} ${4:density}"
+    ],
+    "description": "Define a simple material"
+  },
+  "Mixture Material": {
+    "prefix": ":MIXT",
+    "body": [
+      ":MIXT ${1:name} ${2:density} ${3:numComponents} ${4:component1} ${5:fraction1} ..."
+    ],
+    "description": "Define a mixture material"
+  },
+  "Parameter": {
+    "prefix": ":P",
+    "body": [
+      ":P ${1:name} ${2:value}"
+    ],
+    "description": "Define a parameter"
+  },
+  "Visibility": {
+    "prefix": ":VIS",
+    "body": [
+      ":VIS ${1:volumeName} ${2|ON,OFF|}"
+    ],
+    "description": "Set volume visibility"
+  },
+  "Color": {
+    "prefix": ":COLOUR",
+    "body": [
+      ":COLOUR ${1:volumeName} ${2:red} ${3:green} ${4:blue} ${5:transparency}"
+    ],
+    "description": "Set volume color and transparency"
+  },
+  "Division by Width": {
+    "prefix": ":DIV_WIDTH",
+    "body": [
+      ":DIV_WIDTH ${1:volumeName} ${2:parentVolumeName} ${3:materialName} ${4:axis} ${5:width} ${6:offset}"
+    ],
+    "description": "Divide a volume by width"
+  },
+  "Division by Number": {
+    "prefix": ":DIV_NDIV",
+    "body": [
+      ":DIV_NDIV ${1:volumeName} ${2:parentVolumeName} ${3:materialName} ${4:axis} ${5:numDivisions} ${6:offset}"
+    ],
+    "description": "Divide a volume by number of divisions"
+  },
+  "Assembly Volume": {
+    "prefix": ":VOLU_ASSEMBLY",
+    "body": [
+      ":VOLU_ASSEMBLY ${1:name} ${2:numVolumes}",
+      "${3:volume1} ${4:rotation1} ${5:x1} ${6:y1} ${7:z1}"
+    ],
+    "description": "Define an assembly volume"
+  }
+}

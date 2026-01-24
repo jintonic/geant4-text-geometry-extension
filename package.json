@@ -1,0 +1,45 @@
+{
+  "name": "geant4-tg",
+  "displayName": "Geant4 Text Geometry",
+  "description": "Syntax highlighting and support for Geant4 Text Geometry (.tg) files.",
+  "version": "0.1.0",
+  "publisher": "antigravity",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "geant4-tg",
+        "aliases": [
+          "Geant4 Text Geometry",
+          "geant4-tg"
+        ],
+        "extensions": [
+          ".tg"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "geant4-tg",
+        "scopeName": "source.geant4-tg",
+        "path": "./syntaxes/geant4-tg.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "geant4-tg",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jintonic/geant4-text-geometry-extension"
+  }
+}
