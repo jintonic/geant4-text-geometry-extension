@@ -1,6 +1,4 @@
-# Geant4 Text Geometry Extension
-
-This extension provides support for editing Geant4 Text Geometry (.tg) files in VS Code, Cursor, and Antigravity.
+This extension provides support for editing Geant4 Text Geometry (.tg) files in [VS Code](https://code.visualstudio.com/), [Cursor](https://cursor.com/), and [Antigravity](https://antigravity.google/).
 
 ## Features
 
@@ -10,21 +8,18 @@ This extension provides support for editing Geant4 Text Geometry (.tg) files in 
 
 ## Installation
 
+### VSIX Installation
+
+1. Obtain the `.vsix` file from the [GitHub Releases](https://github.com/jintonic/geant4-text-geometry-extension/releases).
+2. Install the `.vsix` file through your editor's "Install from VSIX" command.
+
 ### Manual Installation
 
 1. Copy this folder to your extensions directory:
    - **VS Code**: `~/.vscode/extensions/geant4-tg`
    - **Cursor**: `~/.cursor/extensions/geant4-tg`
-   - **Antigravity**: `~/.antigravity/extensions/geant4-tg` (or follow the specific Antigravity extension installation guide)
+   - **Antigravity**: `~/.antigravity/extensions/geant4-tg`
 2. Restart your editor.
-
-### VSIX Installation
-
-1. Build the VSIX package (if you have `vsce` installed):
-   ```bash
-   npx @vscode/vsce package
-   ```
-2. Install the `.vsix` file through your editor's "Install from VSIX" command.
 
 ## Usage
 
@@ -39,3 +34,29 @@ Simply open any file with the `.tg` extension to enable Geant4 Text Geometry sup
 - **Include**: Nest files using `#include`.
 - **Solids**: Common types like `BOX`, `TUBE`, `TRD`, `SPHERE`, etc.
 - **Math**: Support for arithmetic expressions and functions like `sin`, `cos`, `log`.
+
+## For Developers
+
+### Prerequisites
+
+To build this extension, you need [Node.js](https://nodejs.org/) installed, which includes [npm](https://www.npmjs.com/) and [npx](https://www.npmjs.com/package/npx).
+
+- **macOS**: `brew install node` (using [Homebrew](https://brew.sh/)) or use the official installer.
+- **Linux**: `sudo apt install nodejs npm` ([Debian](https://www.debian.org/)/[Ubuntu](https://ubuntu.com/)) or use [NodeSource](https://github.com/nodesource/distributions).
+- **Windows**: `winget install OpenJS.NodeJS` or download from [nodejs.org](https://nodejs.org/).
+
+*Pro Tip: Use [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows) to manage Node versions easily.*
+
+### Building the Extension
+
+To install the [Visual Studio Code Extension Manager (`vsce`)](https://github.com/microsoft/vscode-vsce) globally, run:
+
+```bash
+npm install -g @vscode/vsce
+```
+
+Once installed, you can build the [VSIX](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#packaging-extensions) package using:
+
+```bash
+npx @vscode/vsce package
+```
