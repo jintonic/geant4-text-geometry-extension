@@ -112,14 +112,19 @@ This will create a `.vsix` file in the root directory. You can inspect its conte
 #### Automatic Publishing (Recommended)
 This repository is configured with a GitHub Action that automatically publishes to the [Open VSX Registry][] whenever a new version tag is pushed.
 
-1.  Update the version in `package.json`.
-2.  Commit your changes.
-3.  Tag the version and push:
+1.  **Run the version command**: Instead of manual editing, use `npm version` to bump the version and create an **annotated tag** automatically.
     ```bash
-    git tag v1.0.1
+    # For a patch (1.0.1 -> 1.0.2)
+    npm version patch -m "Release version %s"
+    
+    # Or to set a specific version
+    npm version 1.0.1 -m "Release version 1.0.1"
+    ```
+2.  **Push the changes and tags**:
+    ```bash
     git push origin main --tags
     ```
-*Note: Ensure you have added your `OVSX_TOKEN` to the GitHub repository secrets.*
+*Note: Ensure your working directory is clean before running `npm version`. This command will update `package.json`, commit the change, and create an annotated tag for you.*
 
 #### Manual Publishing
 You can also publish manually from your terminal using the local version of `ovsx`:
