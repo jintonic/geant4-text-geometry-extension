@@ -9,10 +9,18 @@ This extension provides support for editing [Geant4 Text Geometry][tg] (.tg) fil
 
 ## Installation
 
+### Open VSX (Antigravity, VSCodium, Cursor, etc.)
+
+Search for **"Geant4 Text Geometry"** in your editor's extension marketplace and click **Install**. This extension is hosted on the [Open VSX Registry][ovsx_page].
+
+### VS Code (Standard)
+
+Standard VS Code uses the Microsoft Marketplace and does not search Open VSX by default. **VS Code users should use the [VSIX Installation](#vsix-installation) method below.**
+
 ### VSIX Installation
 
-1. Obtain the `.vsix` file from the GitHub [Releases][].
-2. Install the `.vsix` file through your editor's "Install from VSIX" link.
+1. Obtain the `.vsix` file from the territory GitHub [Releases][].
+2. Install the `.vsix` file through your editor's **"Install from VSIX..."** command (found in the Extensions view `...` menu).
 
 ## Usage
 
@@ -174,3 +182,4 @@ This project pins a specific version of the `ovsx` publisher in `package.json` t
 [GEARS]: https://github.com/jintonic/gears/tree/master/tutorials/detector/optical
 [Open VSX Registry]: https://open-vsx.org/
 [ovsx]: https://www.npmjs.com/package/ovsx
+[ovsx_page]: https://open-vsx.org/extension/jintonic/geant4-tg
