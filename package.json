@@ -2,10 +2,16 @@
   "name": "geant4-tg",
   "displayName": "Geant4 Text Geometry",
   "description": "Syntax highlighting and support for Geant4 Text Geometry (.tg) files.",
-  "version": "0.1.0",
-  "publisher": "antigravity",
+  "version": "1.0.0",
+  "publisher": "jintonic",
   "engines": {
     "vscode": "^1.60.0"
+  },
+  "configurationDefaults": {
+    "[geant4-tg]": {
+      "files.insertFinalNewline": true,
+      "files.trimTrailingWhitespace": true
+    }
   },
   "categories": [
     "Programming Languages"
