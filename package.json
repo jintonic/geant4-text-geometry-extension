@@ -2,10 +2,14 @@
   "name": "geant4-tg",
   "displayName": "Geant4 Text Geometry",
   "description": "Syntax highlighting and support for Geant4 Text Geometry (.tg) files.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "jintonic",
   "engines": {
     "vscode": "^1.61.0"
+  },
+  "scripts": {
+    "package": "ovsx package",
+    "publish": "ovsx publish"
   },
   "configurationDefaults": {
     "[geant4-tg]": {
@@ -14,7 +18,15 @@
     }
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Snippets"
+  ],
+  "keywords": [
+    "geant4",
+    "text geometry",
+    "tg",
+    "physics",
+    "simulation"
   ],
   "contributes": {
     "languages": [
@@ -47,5 +59,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jintonic/geant4-text-geometry-extension"
+  },
+  "devDependencies": {
+    "ovsx": "^0.10.7"
   }
 }
