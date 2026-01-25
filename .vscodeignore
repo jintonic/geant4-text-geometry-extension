@@ -1,0 +1,12 @@
+.vscode/**
+.github/**
+.git/**
+.gitignore
+.DS_Store
+**/*.vsix
+node_modules/**
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+**/*.log
+**/*.pdf
