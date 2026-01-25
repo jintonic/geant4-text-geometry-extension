@@ -65,43 +65,103 @@ The extension provides several snippets to speed up your geometry definition. St
 
 ### Prerequisites
 
-To build this extension, you need [Node.js][nodejs] installed, which includes [npm][npm] and [npx][npx].
+To build this extension, you need [Node.js][] installed, which includes [npm][] and [npx][].
 
-- **macOS**: `brew install node` (using [Homebrew][homebrew]) or use the official installer.
-- **Linux**: `sudo apt install nodejs npm` ([Debian][debian]/[Ubuntu][ubuntu]) or use [NodeSource][nodesource].
-- **Windows**: `winget install OpenJS.NodeJS` or download from [nodejs.org][nodejs].
+- **macOS**: `brew install node` (using [Homebrew][]) or use the official installer.
+- **Linux**: `sudo apt install nodejs npm` ([Debian][] / [Ubuntu][]) or use [NodeSource][].
+- **Windows**: `winget install OpenJS.NodeJS` or download from [Node.js][].
 
-*Tip*: Use [nvm][nvm] (macOS/Linux) or [nvm-windows][nvm-windows] to manage Node versions easily.
+*Tip*: Use [nvm][] (macOS/Linux) or [nvm-windows][] to manage Node versions easily.
+
+### Project Files
+
+#### Core Extension Files
+- **[package.json](package.json)**: The manifest file that defines the extension's metadata, contributions (languages, grammars, snippets), and scripts.
+- **[language-configuration.json](language-configuration.json)**: Configures language features like comment toggling, bracket matching, and auto-indentation.
+- **[syntaxes/geant4-tg.tmLanguage.json](syntaxes/geant4-tg.tmLanguage.json)**: The TextMate grammar file that provides the logic for syntax highlighting.
+- **[snippets/snippets.json](snippets/snippets.json)**: Contains all the geometry definition snippets available in the editor.
+
+#### Documentation & Legal
+- **[README.md](README.md)**: The main documentation file (this file), providing usage and developer instructions.
+- **[LICENSE](LICENSE)**: The legal license for the project (MIT).
+
+#### Development & CI/CD
+- **[.vscode/launch.json](.vscode/launch.json)**: Setup for the "Extension Development Host" to test changes locally.
+- **[.github/workflows/publish.yml](.github/workflows/publish.yml)**: GitHub Action workflow for automated publishing to Open VSX.
+- **[.vscodeignore](.vscodeignore)**: Defines which files should be excluded from the final extension bundle.
+- **[.gitignore](.gitignore)**: Lists files and directories that should not be tracked by Git.
 
 ### Building the Extension
 
-To install the Visual Studio Code Extension Manager ([vsce][]) globally, run:
+To build the [VSIX][] package locally, first install dependencies:
 
 ```bash
-npm install -g @vscode/vsce
+npm install
 ```
 
-Once installed, you can build the [VSIX][] package using:
+Then run the package script:
 
 ```bash
-npx @vscode/vsce package
+npm run package
 ```
+
+This will create a `.vsix` file in the root directory. You can inspect its contents or install it manually to test.
+
+### Publishing the Extension
+
+#### Automatic Publishing (Recommended)
+This repository is configured with a GitHub Action that automatically publishes to the [Open VSX Registry][] whenever a new version tag is pushed.
+
+1.  Update the version in `package.json`.
+2.  Commit your changes.
+3.  Tag the version and push:
+    ```bash
+    git tag v1.0.1
+    git push origin main --tags
+    ```
+*Note: Ensure you have added your `OVSX_TOKEN` to the GitHub repository secrets.*
+
+#### Manual Publishing
+You can also publish manually from your terminal using the local version of `ovsx`:
+
+```bash
+# Using the local project scripts
+npm run publish -- -p <YOUR_OVSX_TOKEN>
+
+# Or using npx
+npx ovsx publish -p <YOUR_OVSX_TOKEN>
+```
+
+### Managing `ovsx` Versions
+
+This project pins a specific version of the `ovsx` publisher in `package.json` to ensure consistent builds.
+
+*   **To try a different version (one-time):**
+    ```bash
+    npx ovsx@latest publish
+    ```
+*   **To permanently update the version:**
+    ```bash
+    npm install ovsx@latest --save-dev
+    ```
 
 [tg]: https://geant4-userdoc.web.cern.ch/UsersGuides/ForApplicationDeveloper/html/Detector/Geometry/geomASCII.html
 [VS code]: https://code.visualstudio.com/
 [Cursor]: https://cursor.com/
 [Antigravity]: https://antigravity.google/
 [Releases]: https://github.com/jintonic/geant4-text-geometry-extension/releases
-[nodejs]: https://nodejs.org/
+[Node.js]: https://nodejs.org/
 [npm]: https://www.npmjs.com/
 [npx]: https://www.npmjs.com/package/npx
-[homebrew]: https://brew.sh/
-[debian]: https://www.debian.org/
-[ubuntu]: https://ubuntu.com/
-[nodesource]: https://github.com/nodesource/distributions
+[Homebrew]: https://brew.sh/
+[Debian]: https://www.debian.org/
+[Ubuntu]: https://ubuntu.com/
+[NodeSource]: https://github.com/nodesource/distributions
 [nvm]: https://github.com/nvm-sh/nvm
 [nvm-windows]: https://github.com/coreybutler/nvm-windows
 [vsce]: https://github.com/microsoft/vscode-vsce
 [VSIX]: https://code.visualstudio.com/api/working-with-extensions/publishing-extension#packaging-extensions
 [NIST Materials]: https://geant4-userdoc.web.cern.ch/UsersGuides/ForApplicationDeveloper/html/Appendix/materialNames.html
 [GEARS]: https://github.com/jintonic/gears/tree/master/tutorials/detector/optical
+[Open VSX Registry]: https://open-vsx.org/
+[ovsx]: https://www.npmjs.com/package/ovsx
