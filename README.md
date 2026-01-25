@@ -112,13 +112,17 @@ This will create a `.vsix` file in the root directory. You can inspect its conte
 #### Automatic Publishing (Recommended)
 This repository is configured with a GitHub Action that automatically publishes to the [Open VSX Registry][] whenever a new version tag is pushed.
 
-1.  **Run the version command**: Instead of manual editing, use `npm version` to bump the version and create an **annotated tag** automatically.
+1.  **Run the version command**: Instead of manual editing, use `npm version` to bump the version and create an **annotated tag** automatically. 
+
+    | Command | Action | Example (1.0.1 →) | When to use |
+    | :--- | :--- | :--- | :--- |
+    | `npm version patch` | Increments 3rd digit | **1.0.2** | Bug fixes / minor tweaks |
+    | `npm version minor` | Increments 2nd digit | **1.1.0** | New features (non-breaking) |
+    | `npm version major` | Increments 1st digit | **2.0.0** | Breaking changes / major overhaul |
+
     ```bash
-    # For a patch (1.0.1 -> 1.0.2)
+    # Example: bump patch and add a message
     npm version patch -m "Release version %s"
-    
-    # Or to set a specific version
-    npm version 1.0.1 -m "Release version 1.0.1"
     ```
 2.  **Push the changes and tags**:
     ```bash
