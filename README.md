@@ -84,7 +84,7 @@ npm install -g @vscode/vsce
 Once installed, you can build the [VSIX][] package using:
 
 ```bash
-npx @vscode/vsce package --target universal
+npx @vscode/vsce package
 ```
 
 [tg]: https://geant4-userdoc.web.cern.ch/UsersGuides/ForApplicationDeveloper/html/Detector/Geometry/geomASCII.html
