@@ -2,15 +2,16 @@
   "name": "geant4-tg",
   "displayName": "Geant4 Text Geometry",
   "description": "Syntax highlighting and support for Geant4 Text Geometry (.tg) files.",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "publisher": "jintonic",
   "engines": {
     "vscode": "^1.61.0"
   },
   "scripts": {
-    "package": "ovsx package",
+    "package": "vsce package",
     "publish": "ovsx publish",
-    "release": "npm version patch && git push origin main --tags"
+    "release": "npm version patch && git push origin main --tags",
+    "format": "prettier --write ."
   },
   "configurationDefaults": {
     "[geant4-tg]": {
@@ -62,6 +63,8 @@
     "url": "https://github.com/jintonic/geant4-text-geometry-extension"
   },
   "devDependencies": {
-    "ovsx": "^0.10.7"
+    "@vscode/vsce": "^3.7.1",
+    "ovsx": "^0.10.7",
+    "prettier": "^3.2.5"
   }
 }
