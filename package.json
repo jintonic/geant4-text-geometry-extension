@@ -41,6 +41,10 @@
         "extensions": [
           ".tg"
         ],
+        "mimetypes": [
+          "text/geant4-tg"
+        ],
+        "firstLine": "^\\s*(//|:volu|:solid|:mate|:p|:vis|:rotm|:isot|:elem|:mixt)",
         "configuration": "./language-configuration.json"
       }
     ],
