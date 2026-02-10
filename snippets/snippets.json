@@ -27,9 +27,7 @@
   },
   "Logical Volume": {
     "prefix": ":volu",
-    "body": [
-      ":volu ${1:name} ${2:solidName} ${3:materialName}"
-    ],
+    "body": [":volu ${1:name} ${2:solidName} ${3:materialName}"],
     "description": "Define a logical volume (using named solid)"
   },
   "Logical Volume (Inline Solid)": {
@@ -55,16 +53,12 @@
   },
   "Rotation Matrix (3 axes)": {
     "prefix": ":rotm",
-    "body": [
-      ":rotm ${1:name} ${2:phiX} ${3:phiY} ${4:phiZ}"
-    ],
+    "body": [":rotm ${1:name} ${2:phiX} ${3:phiY} ${4:phiZ}"],
     "description": "Define a rotation matrix using angles around global X, Y, Z axes"
   },
   "Rotation Matrix (6 polar/azimuthal)": {
     "prefix": ":rotm6",
-    "body": [
-      ":rotm ${1:name} ${2:thetaX} ${3:phiX} ${4:thetaY} ${5:phiY} ${6:thetaZ} ${7:phiZ}"
-    ],
+    "body": [":rotm ${1:name} ${2:thetaX} ${3:phiX} ${4:thetaY} ${5:phiY} ${6:thetaZ} ${7:phiZ}"],
     "description": "Define a rotation matrix using 6 polar/azimuthal angles"
   },
   "Rotation Matrix (9 elements)": {
@@ -76,16 +70,12 @@
   },
   "Isotope": {
     "prefix": ":isot",
-    "body": [
-      ":isot ${1:name} ${2:Z} ${3:N} ${4:A}"
-    ],
+    "body": [":isot ${1:name} ${2:Z} ${3:N} ${4:A}"],
     "description": "Define an isotope"
   },
   "Element": {
     "prefix": ":elem",
-    "body": [
-      ":elem ${1:name} ${2:symbol} ${3:Z} ${4:A}"
-    ],
+    "body": [":elem ${1:name} ${2:symbol} ${3:Z} ${4:A}"],
     "description": "Define a simple element"
   },
   "Element from Isotopes": {
@@ -97,44 +87,32 @@
   },
   "Simple Material": {
     "prefix": ":mate",
-    "body": [
-      ":mate ${1:name} ${2:Z} ${3:A} ${4:density}"
-    ],
+    "body": [":mate ${1:name} ${2:Z} ${3:A} ${4:density}"],
     "description": "Define a simple material"
   },
   "Mixture Material": {
     "prefix": ":mixt",
-    "body": [
-      ":mixt ${1:name} ${2:density} ${3:numComponents} ${4:component1} ${5:fraction1} ..."
-    ],
+    "body": [":mixt ${1:name} ${2:density} ${3:numComponents} ${4:component1} ${5:fraction1} ..."],
     "description": "Define a mixture material"
   },
   "Parameter": {
     "prefix": ":p",
-    "body": [
-      ":p ${1:name} ${2:value}"
-    ],
+    "body": [":p ${1:name} ${2:value}"],
     "description": "Define a parameter"
   },
   "Visibility": {
     "prefix": ":vis",
-    "body": [
-      ":vis ${1:volumeName} ${2|ON,OFF|}"
-    ],
+    "body": [":vis ${1:volumeName} ${2|ON,OFF|}"],
     "description": "Set volume visibility"
   },
   "Color": {
     "prefix": ":colour",
-    "body": [
-      ":colour ${1:volumeName} ${2:red} ${3:green} ${4:blue} ${5:transparency}"
-    ],
+    "body": [":colour ${1:volumeName} ${2:red} ${3:green} ${4:blue} ${5:transparency}"],
     "description": "Set volume color and transparency"
   },
   "Color (Alias)": {
     "prefix": ":color",
-    "body": [
-      ":colour ${1:volumeName} ${2:red} ${3:green} ${4:blue} ${5:transparency}"
-    ],
+    "body": [":colour ${1:volumeName} ${2:red} ${3:green} ${4:blue} ${5:transparency}"],
     "description": "Set volume color and transparency (alias)"
   },
   "Division by Width": {
@@ -182,9 +160,7 @@
   },
   "Check Overlaps": {
     "prefix": ":check_overlaps",
-    "body": [
-      ":check_overlaps ${1:volumeName}"
-    ],
+    "body": [":check_overlaps ${1:volumeName}"],
     "description": "Enable overlap checking for a volume"
   },
   "Optical Property (GEARS)": {
@@ -203,2522 +179,1802 @@
   },
   "Material: water": {
     "prefix": "water",
-    "body": [
-      "G4_WATER"
-    ],
+    "body": ["G4_WATER"],
     "description": "Geant4 NIST Material: G4_WATER"
   },
   "Material: air": {
     "prefix": "air",
-    "body": [
-      "G4_AIR"
-    ],
+    "body": ["G4_AIR"],
     "description": "Geant4 NIST Material: G4_AIR"
   },
   "Material: lead": {
     "prefix": "lead",
-    "body": [
-      "G4_Pb"
-    ],
+    "body": ["G4_Pb"],
     "description": "Geant4 NIST Material: G4_Pb"
   },
   "Material: iron": {
     "prefix": "iron",
-    "body": [
-      "G4_Fe"
-    ],
+    "body": ["G4_Fe"],
     "description": "Geant4 NIST Material: G4_Fe"
   },
   "Material: aluminum": {
     "prefix": "aluminum",
-    "body": [
-      "G4_Al"
-    ],
+    "body": ["G4_Al"],
     "description": "Geant4 NIST Material: G4_Al"
   },
   "Material: copper": {
     "prefix": "copper",
-    "body": [
-      "G4_Cu"
-    ],
+    "body": ["G4_Cu"],
     "description": "Geant4 NIST Material: G4_Cu"
   },
   "Material: gold": {
     "prefix": "gold",
-    "body": [
-      "G4_Au"
-    ],
+    "body": ["G4_Au"],
     "description": "Geant4 NIST Material: G4_Au"
   },
   "Material: silver": {
     "prefix": "silver",
-    "body": [
-      "G4_Ag"
-    ],
+    "body": ["G4_Ag"],
     "description": "Geant4 NIST Material: G4_Ag"
   },
   "Material: carbon": {
     "prefix": "carbon",
-    "body": [
-      "G4_C"
-    ],
+    "body": ["G4_C"],
     "description": "Geant4 NIST Material: G4_C"
   },
   "Material: silicon": {
     "prefix": "silicon",
-    "body": [
-      "G4_Si"
-    ],
+    "body": ["G4_Si"],
     "description": "Geant4 NIST Material: G4_Si"
   },
   "Material: concrete": {
     "prefix": "concrete",
-    "body": [
-      "G4_CONCRETE"
-    ],
+    "body": ["G4_CONCRETE"],
     "description": "Geant4 NIST Material: G4_CONCRETE"
   },
   "Material: graphite": {
     "prefix": "graphite",
-    "body": [
-      "G4_GRAPHITE"
-    ],
+    "body": ["G4_GRAPHITE"],
     "description": "Geant4 NIST Material: G4_GRAPHITE"
   },
   "Material: vacuum": {
     "prefix": "vacuum",
-    "body": [
-      "G4_Galactic"
-    ],
+    "body": ["G4_Galactic"],
     "description": "Geant4 NIST Material: G4_Galactic"
   },
   "Material: bone": {
     "prefix": "bone",
-    "body": [
-      "G4_BONE_COMPACT_ICRU"
-    ],
+    "body": ["G4_BONE_COMPACT_ICRU"],
     "description": "Geant4 NIST Material: G4_BONE_COMPACT_ICRU"
   },
   "Material: muscle": {
     "prefix": "muscle",
-    "body": [
-      "G4_MUSCLE_STRIATED_ICRU"
-    ],
+    "body": ["G4_MUSCLE_STRIATED_ICRU"],
     "description": "Geant4 NIST Material: G4_MUSCLE_STRIATED_ICRU"
   },
   "Material: lung": {
     "prefix": "lung",
-    "body": [
-      "G4_LUNG_ICRP"
-    ],
+    "body": ["G4_LUNG_ICRP"],
     "description": "Geant4 NIST Material: G4_LUNG_ICRP"
   },
   "Material: brain": {
     "prefix": "brain",
-    "body": [
-      "G4_BRAIN_ICRP"
-    ],
+    "body": ["G4_BRAIN_ICRP"],
     "description": "Geant4 NIST Material: G4_BRAIN_ICRP"
   },
   "Material: blood": {
     "prefix": "blood",
-    "body": [
-      "G4_BLOOD_ICRP"
-    ],
+    "body": ["G4_BLOOD_ICRP"],
     "description": "Geant4 NIST Material: G4_BLOOD_ICRP"
   },
   "Material: skin": {
     "prefix": "skin",
-    "body": [
-      "G4_SKIN_ICRP"
-    ],
+    "body": ["G4_SKIN_ICRP"],
     "description": "Geant4 NIST Material: G4_SKIN_ICRP"
   },
   "Material: tissue": {
     "prefix": "tissue",
-    "body": [
-      "G4_TISSUE_SOFT_ICRP"
-    ],
+    "body": ["G4_TISSUE_SOFT_ICRP"],
     "description": "Geant4 NIST Material: G4_TISSUE_SOFT_ICRP"
   },
   "G4 Material: G4_1,2-DICHLOROBENZENE": {
     "prefix": "G4_1,2-DICHLOROBENZENE",
-    "body": [
-      "G4_1,2-DICHLOROBENZENE"
-    ],
+    "body": ["G4_1,2-DICHLOROBENZENE"],
     "description": "Geant4 NIST Material: G4_1,2-DICHLOROBENZENE"
   },
   "G4 Material: G4_1,2-DICHLOROETHANE": {
     "prefix": "G4_1,2-DICHLOROETHANE",
-    "body": [
-      "G4_1,2-DICHLOROETHANE"
-    ],
+    "body": ["G4_1,2-DICHLOROETHANE"],
     "description": "Geant4 NIST Material: G4_1,2-DICHLOROETHANE"
   },
   "G4 Material: G4_A-150_TISSUE": {
     "prefix": "G4_A-150_TISSUE",
-    "body": [
-      "G4_A-150_TISSUE"
-    ],
+    "body": ["G4_A-150_TISSUE"],
     "description": "Geant4 NIST Material: G4_A-150_TISSUE"
   },
   "G4 Material: G4_ACETONE": {
     "prefix": "G4_ACETONE",
-    "body": [
-      "G4_ACETONE"
-    ],
+    "body": ["G4_ACETONE"],
     "description": "Geant4 NIST Material: G4_ACETONE"
   },
   "G4 Material: G4_ACETYLENE": {
     "prefix": "G4_ACETYLENE",
-    "body": [
-      "G4_ACETYLENE"
-    ],
+    "body": ["G4_ACETYLENE"],
     "description": "Geant4 NIST Material: G4_ACETYLENE"
   },
   "G4 Material: G4_ADENINE": {
     "prefix": "G4_ADENINE",
-    "body": [
-      "G4_ADENINE"
-    ],
+    "body": ["G4_ADENINE"],
     "description": "Geant4 NIST Material: G4_ADENINE"
   },
   "G4 Material: G4_ADIPOSE_TISSUE_ICRP": {
     "prefix": "G4_ADIPOSE_TISSUE_ICRP",
-    "body": [
-      "G4_ADIPOSE_TISSUE_ICRP"
-    ],
+    "body": ["G4_ADIPOSE_TISSUE_ICRP"],
     "description": "Geant4 NIST Material: G4_ADIPOSE_TISSUE_ICRP"
   },
   "G4 Material: G4_AIR": {
     "prefix": "G4_AIR",
-    "body": [
-      "G4_AIR"
-    ],
+    "body": ["G4_AIR"],
     "description": "Geant4 NIST Material: G4_AIR"
   },
   "G4 Material: G4_ALANINE": {
     "prefix": "G4_ALANINE",
-    "body": [
-      "G4_ALANINE"
-    ],
+    "body": ["G4_ALANINE"],
     "description": "Geant4 NIST Material: G4_ALANINE"
   },
   "G4 Material: G4_ALUMINUM_OXIDE": {
     "prefix": "G4_ALUMINUM_OXIDE",
-    "body": [
-      "G4_ALUMINUM_OXIDE"
-    ],
+    "body": ["G4_ALUMINUM_OXIDE"],
     "description": "Geant4 NIST Material: G4_ALUMINUM_OXIDE"
   },
   "G4 Material: G4_AMBER": {
     "prefix": "G4_AMBER",
-    "body": [
-      "G4_AMBER"
-    ],
+    "body": ["G4_AMBER"],
     "description": "Geant4 NIST Material: G4_AMBER"
   },
   "G4 Material: G4_AMMONIA": {
     "prefix": "G4_AMMONIA",
-    "body": [
-      "G4_AMMONIA"
-    ],
+    "body": ["G4_AMMONIA"],
     "description": "Geant4 NIST Material: G4_AMMONIA"
   },
   "G4 Material: G4_ANILINE": {
     "prefix": "G4_ANILINE",
-    "body": [
-      "G4_ANILINE"
-    ],
+    "body": ["G4_ANILINE"],
     "description": "Geant4 NIST Material: G4_ANILINE"
   },
   "G4 Material: G4_ANTHRACENE": {
     "prefix": "G4_ANTHRACENE",
-    "body": [
-      "G4_ANTHRACENE"
-    ],
+    "body": ["G4_ANTHRACENE"],
     "description": "Geant4 NIST Material: G4_ANTHRACENE"
   },
   "G4 Material: G4_Ac": {
     "prefix": "G4_Ac",
-    "body": [
-      "G4_Ac"
-    ],
+    "body": ["G4_Ac"],
     "description": "Geant4 NIST Material: G4_Ac"
   },
   "G4 Material: G4_Ag": {
     "prefix": "G4_Ag",
-    "body": [
-      "G4_Ag"
-    ],
+    "body": ["G4_Ag"],
     "description": "Geant4 NIST Material: G4_Ag"
   },
   "G4 Material: G4_Al": {
     "prefix": "G4_Al",
-    "body": [
-      "G4_Al"
-    ],
+    "body": ["G4_Al"],
     "description": "Geant4 NIST Material: G4_Al"
   },
   "G4 Material: G4_Am": {
     "prefix": "G4_Am",
-    "body": [
-      "G4_Am"
-    ],
+    "body": ["G4_Am"],
     "description": "Geant4 NIST Material: G4_Am"
   },
   "G4 Material: G4_Ar": {
     "prefix": "G4_Ar",
-    "body": [
-      "G4_Ar"
-    ],
+    "body": ["G4_Ar"],
     "description": "Geant4 NIST Material: G4_Ar"
   },
   "G4 Material: G4_As": {
     "prefix": "G4_As",
-    "body": [
-      "G4_As"
-    ],
+    "body": ["G4_As"],
     "description": "Geant4 NIST Material: G4_As"
   },
   "G4 Material: G4_At": {
     "prefix": "G4_At",
-    "body": [
-      "G4_At"
-    ],
+    "body": ["G4_At"],
     "description": "Geant4 NIST Material: G4_At"
   },
   "G4 Material: G4_Au": {
     "prefix": "G4_Au",
-    "body": [
-      "G4_Au"
-    ],
+    "body": ["G4_Au"],
     "description": "Geant4 NIST Material: G4_Au"
   },
   "G4 Material: G4_B": {
     "prefix": "G4_B",
-    "body": [
-      "G4_B"
-    ],
+    "body": ["G4_B"],
     "description": "Geant4 NIST Material: G4_B"
   },
   "G4 Material: G4_B-100_BONE": {
     "prefix": "G4_B-100_BONE",
-    "body": [
-      "G4_B-100_BONE"
-    ],
+    "body": ["G4_B-100_BONE"],
     "description": "Geant4 NIST Material: G4_B-100_BONE"
   },
   "G4 Material: G4_BAKELITE": {
     "prefix": "G4_BAKELITE",
-    "body": [
-      "G4_BAKELITE"
-    ],
+    "body": ["G4_BAKELITE"],
     "description": "Geant4 NIST Material: G4_BAKELITE"
   },
   "G4 Material: G4_BARIUM_FLUORIDE": {
     "prefix": "G4_BARIUM_FLUORIDE",
-    "body": [
-      "G4_BARIUM_FLUORIDE"
-    ],
+    "body": ["G4_BARIUM_FLUORIDE"],
     "description": "Geant4 NIST Material: G4_BARIUM_FLUORIDE"
   },
   "G4 Material: G4_BARIUM_SULFATE": {
     "prefix": "G4_BARIUM_SULFATE",
-    "body": [
-      "G4_BARIUM_SULFATE"
-    ],
+    "body": ["G4_BARIUM_SULFATE"],
     "description": "Geant4 NIST Material: G4_BARIUM_SULFATE"
   },
   "G4 Material: G4_BENZENE": {
     "prefix": "G4_BENZENE",
-    "body": [
-      "G4_BENZENE"
-    ],
+    "body": ["G4_BENZENE"],
     "description": "Geant4 NIST Material: G4_BENZENE"
   },
   "G4 Material: G4_BERYLLIUM_OXIDE": {
     "prefix": "G4_BERYLLIUM_OXIDE",
-    "body": [
-      "G4_BERYLLIUM_OXIDE"
-    ],
+    "body": ["G4_BERYLLIUM_OXIDE"],
     "description": "Geant4 NIST Material: G4_BERYLLIUM_OXIDE"
   },
   "G4 Material: G4_BGO": {
     "prefix": "G4_BGO",
-    "body": [
-      "G4_BGO"
-    ],
+    "body": ["G4_BGO"],
     "description": "Geant4 NIST Material: G4_BGO"
   },
   "G4 Material: G4_BLOOD_ICRP": {
     "prefix": "G4_BLOOD_ICRP",
-    "body": [
-      "G4_BLOOD_ICRP"
-    ],
+    "body": ["G4_BLOOD_ICRP"],
     "description": "Geant4 NIST Material: G4_BLOOD_ICRP"
   },
   "G4 Material: G4_BONE_COMPACT_ICRU": {
     "prefix": "G4_BONE_COMPACT_ICRU",
-    "body": [
-      "G4_BONE_COMPACT_ICRU"
-    ],
+    "body": ["G4_BONE_COMPACT_ICRU"],
     "description": "Geant4 NIST Material: G4_BONE_COMPACT_ICRU"
   },
   "G4 Material: G4_BONE_CORTICAL_ICRP": {
     "prefix": "G4_BONE_CORTICAL_ICRP",
-    "body": [
-      "G4_BONE_CORTICAL_ICRP"
-    ],
+    "body": ["G4_BONE_CORTICAL_ICRP"],
     "description": "Geant4 NIST Material: G4_BONE_CORTICAL_ICRP"
   },
   "G4 Material: G4_BORON_CARBIDE": {
     "prefix": "G4_BORON_CARBIDE",
-    "body": [
-      "G4_BORON_CARBIDE"
-    ],
+    "body": ["G4_BORON_CARBIDE"],
     "description": "Geant4 NIST Material: G4_BORON_CARBIDE"
   },
   "G4 Material: G4_BORON_OXIDE": {
     "prefix": "G4_BORON_OXIDE",
-    "body": [
-      "G4_BORON_OXIDE"
-    ],
+    "body": ["G4_BORON_OXIDE"],
     "description": "Geant4 NIST Material: G4_BORON_OXIDE"
   },
   "G4 Material: G4_BRAIN_ICRP": {
     "prefix": "G4_BRAIN_ICRP",
-    "body": [
-      "G4_BRAIN_ICRP"
-    ],
+    "body": ["G4_BRAIN_ICRP"],
     "description": "Geant4 NIST Material: G4_BRAIN_ICRP"
   },
   "G4 Material: G4_BRASS": {
     "prefix": "G4_BRASS",
-    "body": [
-      "G4_BRASS"
-    ],
+    "body": ["G4_BRASS"],
     "description": "Geant4 NIST Material: G4_BRASS"
   },
   "G4 Material: G4_BRONZE": {
     "prefix": "G4_BRONZE",
-    "body": [
-      "G4_BRONZE"
-    ],
+    "body": ["G4_BRONZE"],
     "description": "Geant4 NIST Material: G4_BRONZE"
   },
   "G4 Material: G4_BUTANE": {
     "prefix": "G4_BUTANE",
-    "body": [
-      "G4_BUTANE"
-    ],
+    "body": ["G4_BUTANE"],
     "description": "Geant4 NIST Material: G4_BUTANE"
   },
   "G4 Material: G4_Ba": {
     "prefix": "G4_Ba",
-    "body": [
-      "G4_Ba"
-    ],
+    "body": ["G4_Ba"],
     "description": "Geant4 NIST Material: G4_Ba"
   },
   "G4 Material: G4_Be": {
     "prefix": "G4_Be",
-    "body": [
-      "G4_Be"
-    ],
+    "body": ["G4_Be"],
     "description": "Geant4 NIST Material: G4_Be"
   },
   "G4 Material: G4_Bi": {
     "prefix": "G4_Bi",
-    "body": [
-      "G4_Bi"
-    ],
+    "body": ["G4_Bi"],
     "description": "Geant4 NIST Material: G4_Bi"
   },
   "G4 Material: G4_Bk": {
     "prefix": "G4_Bk",
-    "body": [
-      "G4_Bk"
-    ],
+    "body": ["G4_Bk"],
     "description": "Geant4 NIST Material: G4_Bk"
   },
   "G4 Material: G4_Br": {
     "prefix": "G4_Br",
-    "body": [
-      "G4_Br"
-    ],
+    "body": ["G4_Br"],
     "description": "Geant4 NIST Material: G4_Br"
   },
   "G4 Material: G4_C": {
     "prefix": "G4_C",
-    "body": [
-      "G4_C"
-    ],
+    "body": ["G4_C"],
     "description": "Geant4 NIST Material: G4_C"
   },
   "G4 Material: G4_C-552": {
     "prefix": "G4_C-552",
-    "body": [
-      "G4_C-552"
-    ],
+    "body": ["G4_C-552"],
     "description": "Geant4 NIST Material: G4_C-552"
   },
   "G4 Material: G4_CADMIUM_TELLURIDE": {
     "prefix": "G4_CADMIUM_TELLURIDE",
-    "body": [
-      "G4_CADMIUM_TELLURIDE"
-    ],
+    "body": ["G4_CADMIUM_TELLURIDE"],
     "description": "Geant4 NIST Material: G4_CADMIUM_TELLURIDE"
   },
   "G4 Material: G4_CADMIUM_TUNGSTATE": {
     "prefix": "G4_CADMIUM_TUNGSTATE",
-    "body": [
-      "G4_CADMIUM_TUNGSTATE"
-    ],
+    "body": ["G4_CADMIUM_TUNGSTATE"],
     "description": "Geant4 NIST Material: G4_CADMIUM_TUNGSTATE"
   },
   "G4 Material: G4_CALCIUM_CARBONATE": {
     "prefix": "G4_CALCIUM_CARBONATE",
-    "body": [
-      "G4_CALCIUM_CARBONATE"
-    ],
+    "body": ["G4_CALCIUM_CARBONATE"],
     "description": "Geant4 NIST Material: G4_CALCIUM_CARBONATE"
   },
   "G4 Material: G4_CALCIUM_FLUORIDE": {
     "prefix": "G4_CALCIUM_FLUORIDE",
-    "body": [
-      "G4_CALCIUM_FLUORIDE"
-    ],
+    "body": ["G4_CALCIUM_FLUORIDE"],
     "description": "Geant4 NIST Material: G4_CALCIUM_FLUORIDE"
   },
   "G4 Material: G4_CALCIUM_OXIDE": {
     "prefix": "G4_CALCIUM_OXIDE",
-    "body": [
-      "G4_CALCIUM_OXIDE"
-    ],
+    "body": ["G4_CALCIUM_OXIDE"],
     "description": "Geant4 NIST Material: G4_CALCIUM_OXIDE"
   },
   "G4 Material: G4_CALCIUM_SULFATE": {
     "prefix": "G4_CALCIUM_SULFATE",
-    "body": [
-      "G4_CALCIUM_SULFATE"
-    ],
+    "body": ["G4_CALCIUM_SULFATE"],
     "description": "Geant4 NIST Material: G4_CALCIUM_SULFATE"
   },
   "G4 Material: G4_CALCIUM_TUNGSTATE": {
     "prefix": "G4_CALCIUM_TUNGSTATE",
-    "body": [
-      "G4_CALCIUM_TUNGSTATE"
-    ],
+    "body": ["G4_CALCIUM_TUNGSTATE"],
     "description": "Geant4 NIST Material: G4_CALCIUM_TUNGSTATE"
   },
   "G4 Material: G4_CARBON_DIOXIDE": {
     "prefix": "G4_CARBON_DIOXIDE",
-    "body": [
-      "G4_CARBON_DIOXIDE"
-    ],
+    "body": ["G4_CARBON_DIOXIDE"],
     "description": "Geant4 NIST Material: G4_CARBON_DIOXIDE"
   },
   "G4 Material: G4_CARBON_TETRACHLORIDE": {
     "prefix": "G4_CARBON_TETRACHLORIDE",
-    "body": [
-      "G4_CARBON_TETRACHLORIDE"
-    ],
+    "body": ["G4_CARBON_TETRACHLORIDE"],
     "description": "Geant4 NIST Material: G4_CARBON_TETRACHLORIDE"
   },
   "G4 Material: G4_CELLULOSE_BUTYRATE": {
     "prefix": "G4_CELLULOSE_BUTYRATE",
-    "body": [
-      "G4_CELLULOSE_BUTYRATE"
-    ],
+    "body": ["G4_CELLULOSE_BUTYRATE"],
     "description": "Geant4 NIST Material: G4_CELLULOSE_BUTYRATE"
   },
   "G4 Material: G4_CELLULOSE_CELLOPHANE": {
     "prefix": "G4_CELLULOSE_CELLOPHANE",
-    "body": [
-      "G4_CELLULOSE_CELLOPHANE"
-    ],
+    "body": ["G4_CELLULOSE_CELLOPHANE"],
     "description": "Geant4 NIST Material: G4_CELLULOSE_CELLOPHANE"
   },
   "G4 Material: G4_CELLULOSE_NITRATE": {
     "prefix": "G4_CELLULOSE_NITRATE",
-    "body": [
-      "G4_CELLULOSE_NITRATE"
-    ],
+    "body": ["G4_CELLULOSE_NITRATE"],
     "description": "Geant4 NIST Material: G4_CELLULOSE_NITRATE"
   },
   "G4 Material: G4_CERIC_SULFATE": {
     "prefix": "G4_CERIC_SULFATE",
-    "body": [
-      "G4_CERIC_SULFATE"
-    ],
+    "body": ["G4_CERIC_SULFATE"],
     "description": "Geant4 NIST Material: G4_CERIC_SULFATE"
   },
   "G4 Material: G4_CESIUM_FLUORIDE": {
     "prefix": "G4_CESIUM_FLUORIDE",
-    "body": [
-      "G4_CESIUM_FLUORIDE"
-    ],
+    "body": ["G4_CESIUM_FLUORIDE"],
     "description": "Geant4 NIST Material: G4_CESIUM_FLUORIDE"
   },
   "G4 Material: G4_CESIUM_IODIDE": {
     "prefix": "G4_CESIUM_IODIDE",
-    "body": [
-      "G4_CESIUM_IODIDE"
-    ],
+    "body": ["G4_CESIUM_IODIDE"],
     "description": "Geant4 NIST Material: G4_CESIUM_IODIDE"
   },
   "G4 Material: G4_CHLOROBENZENE": {
     "prefix": "G4_CHLOROBENZENE",
-    "body": [
-      "G4_CHLOROBENZENE"
-    ],
+    "body": ["G4_CHLOROBENZENE"],
     "description": "Geant4 NIST Material: G4_CHLOROBENZENE"
   },
   "G4 Material: G4_CHLOROFORM": {
     "prefix": "G4_CHLOROFORM",
-    "body": [
-      "G4_CHLOROFORM"
-    ],
+    "body": ["G4_CHLOROFORM"],
     "description": "Geant4 NIST Material: G4_CHLOROFORM"
   },
   "G4 Material: G4_CONCRETE": {
     "prefix": "G4_CONCRETE",
-    "body": [
-      "G4_CONCRETE"
-    ],
+    "body": ["G4_CONCRETE"],
     "description": "Geant4 NIST Material: G4_CONCRETE"
   },
   "G4 Material: G4_CR39": {
     "prefix": "G4_CR39",
-    "body": [
-      "G4_CR39"
-    ],
+    "body": ["G4_CR39"],
     "description": "Geant4 NIST Material: G4_CR39"
   },
   "G4 Material: G4_CYCLOHEXANE": {
     "prefix": "G4_CYCLOHEXANE",
-    "body": [
-      "G4_CYCLOHEXANE"
-    ],
+    "body": ["G4_CYCLOHEXANE"],
     "description": "Geant4 NIST Material: G4_CYCLOHEXANE"
   },
   "G4 Material: G4_CYTOSINE": {
     "prefix": "G4_CYTOSINE",
-    "body": [
-      "G4_CYTOSINE"
-    ],
+    "body": ["G4_CYTOSINE"],
     "description": "Geant4 NIST Material: G4_CYTOSINE"
   },
   "G4 Material: G4_Ca": {
     "prefix": "G4_Ca",
-    "body": [
-      "G4_Ca"
-    ],
+    "body": ["G4_Ca"],
     "description": "Geant4 NIST Material: G4_Ca"
   },
   "G4 Material: G4_Cd": {
     "prefix": "G4_Cd",
-    "body": [
-      "G4_Cd"
-    ],
+    "body": ["G4_Cd"],
     "description": "Geant4 NIST Material: G4_Cd"
   },
   "G4 Material: G4_Ce": {
     "prefix": "G4_Ce",
-    "body": [
-      "G4_Ce"
-    ],
+    "body": ["G4_Ce"],
     "description": "Geant4 NIST Material: G4_Ce"
   },
   "G4 Material: G4_Cf": {
     "prefix": "G4_Cf",
-    "body": [
-      "G4_Cf"
-    ],
+    "body": ["G4_Cf"],
     "description": "Geant4 NIST Material: G4_Cf"
   },
   "G4 Material: G4_Cl": {
     "prefix": "G4_Cl",
-    "body": [
-      "G4_Cl"
-    ],
+    "body": ["G4_Cl"],
     "description": "Geant4 NIST Material: G4_Cl"
   },
   "G4 Material: G4_Cm": {
     "prefix": "G4_Cm",
-    "body": [
-      "G4_Cm"
-    ],
+    "body": ["G4_Cm"],
     "description": "Geant4 NIST Material: G4_Cm"
   },
   "G4 Material: G4_Co": {
     "prefix": "G4_Co",
-    "body": [
-      "G4_Co"
-    ],
+    "body": ["G4_Co"],
     "description": "Geant4 NIST Material: G4_Co"
   },
   "G4 Material: G4_Cr": {
     "prefix": "G4_Cr",
-    "body": [
-      "G4_Cr"
-    ],
+    "body": ["G4_Cr"],
     "description": "Geant4 NIST Material: G4_Cr"
   },
   "G4 Material: G4_Cs": {
     "prefix": "G4_Cs",
-    "body": [
-      "G4_Cs"
-    ],
+    "body": ["G4_Cs"],
     "description": "Geant4 NIST Material: G4_Cs"
   },
   "G4 Material: G4_Cu": {
     "prefix": "G4_Cu",
-    "body": [
-      "G4_Cu"
-    ],
+    "body": ["G4_Cu"],
     "description": "Geant4 NIST Material: G4_Cu"
   },
   "G4 Material: G4_DACRON": {
     "prefix": "G4_DACRON",
-    "body": [
-      "G4_DACRON"
-    ],
+    "body": ["G4_DACRON"],
     "description": "Geant4 NIST Material: G4_DACRON"
   },
   "G4 Material: G4_DEOXYRIBOSE": {
     "prefix": "G4_DEOXYRIBOSE",
-    "body": [
-      "G4_DEOXYRIBOSE"
-    ],
+    "body": ["G4_DEOXYRIBOSE"],
     "description": "Geant4 NIST Material: G4_DEOXYRIBOSE"
   },
   "G4 Material: G4_DICHLORODIETHYL_ETHER": {
     "prefix": "G4_DICHLORODIETHYL_ETHER",
-    "body": [
-      "G4_DICHLORODIETHYL_ETHER"
-    ],
+    "body": ["G4_DICHLORODIETHYL_ETHER"],
     "description": "Geant4 NIST Material: G4_DICHLORODIETHYL_ETHER"
   },
   "G4 Material: G4_DIETHYL_ETHER": {
     "prefix": "G4_DIETHYL_ETHER",
-    "body": [
-      "G4_DIETHYL_ETHER"
-    ],
+    "body": ["G4_DIETHYL_ETHER"],
     "description": "Geant4 NIST Material: G4_DIETHYL_ETHER"
   },
   "G4 Material: G4_DIMETHYL_SULFOXIDE": {
     "prefix": "G4_DIMETHYL_SULFOXIDE",
-    "body": [
-      "G4_DIMETHYL_SULFOXIDE"
-    ],
+    "body": ["G4_DIMETHYL_SULFOXIDE"],
     "description": "Geant4 NIST Material: G4_DIMETHYL_SULFOXIDE"
   },
   "G4 Material: G4_DNA_ADENINE": {
     "prefix": "G4_DNA_ADENINE",
-    "body": [
-      "G4_DNA_ADENINE"
-    ],
+    "body": ["G4_DNA_ADENINE"],
     "description": "Geant4 NIST Material: G4_DNA_ADENINE"
   },
   "G4 Material: G4_DNA_CYTOSINE": {
     "prefix": "G4_DNA_CYTOSINE",
-    "body": [
-      "G4_DNA_CYTOSINE"
-    ],
+    "body": ["G4_DNA_CYTOSINE"],
     "description": "Geant4 NIST Material: G4_DNA_CYTOSINE"
   },
   "G4 Material: G4_DNA_DEOXYRIBOSE": {
     "prefix": "G4_DNA_DEOXYRIBOSE",
-    "body": [
-      "G4_DNA_DEOXYRIBOSE"
-    ],
+    "body": ["G4_DNA_DEOXYRIBOSE"],
     "description": "Geant4 NIST Material: G4_DNA_DEOXYRIBOSE"
   },
   "G4 Material: G4_DNA_GUANINE": {
     "prefix": "G4_DNA_GUANINE",
-    "body": [
-      "G4_DNA_GUANINE"
-    ],
+    "body": ["G4_DNA_GUANINE"],
     "description": "Geant4 NIST Material: G4_DNA_GUANINE"
   },
   "G4 Material: G4_DNA_PHOSPHATE": {
     "prefix": "G4_DNA_PHOSPHATE",
-    "body": [
-      "G4_DNA_PHOSPHATE"
-    ],
+    "body": ["G4_DNA_PHOSPHATE"],
     "description": "Geant4 NIST Material: G4_DNA_PHOSPHATE"
   },
   "G4 Material: G4_DNA_THYMINE": {
     "prefix": "G4_DNA_THYMINE",
-    "body": [
-      "G4_DNA_THYMINE"
-    ],
+    "body": ["G4_DNA_THYMINE"],
     "description": "Geant4 NIST Material: G4_DNA_THYMINE"
   },
   "G4 Material: G4_DNA_URACIL": {
     "prefix": "G4_DNA_URACIL",
-    "body": [
-      "G4_DNA_URACIL"
-    ],
+    "body": ["G4_DNA_URACIL"],
     "description": "Geant4 NIST Material: G4_DNA_URACIL"
   },
   "G4 Material: G4_Dy": {
     "prefix": "G4_Dy",
-    "body": [
-      "G4_Dy"
-    ],
+    "body": ["G4_Dy"],
     "description": "Geant4 NIST Material: G4_Dy"
   },
   "G4 Material: G4_ETHANE": {
     "prefix": "G4_ETHANE",
-    "body": [
-      "G4_ETHANE"
-    ],
+    "body": ["G4_ETHANE"],
     "description": "Geant4 NIST Material: G4_ETHANE"
   },
   "G4 Material: G4_ETHYLENE": {
     "prefix": "G4_ETHYLENE",
-    "body": [
-      "G4_ETHYLENE"
-    ],
+    "body": ["G4_ETHYLENE"],
     "description": "Geant4 NIST Material: G4_ETHYLENE"
   },
   "G4 Material: G4_ETHYL_ALCOHOL": {
     "prefix": "G4_ETHYL_ALCOHOL",
-    "body": [
-      "G4_ETHYL_ALCOHOL"
-    ],
+    "body": ["G4_ETHYL_ALCOHOL"],
     "description": "Geant4 NIST Material: G4_ETHYL_ALCOHOL"
   },
   "G4 Material: G4_ETHYL_CELLULOSE": {
     "prefix": "G4_ETHYL_CELLULOSE",
-    "body": [
-      "G4_ETHYL_CELLULOSE"
-    ],
+    "body": ["G4_ETHYL_CELLULOSE"],
     "description": "Geant4 NIST Material: G4_ETHYL_CELLULOSE"
   },
   "G4 Material: G4_EYE_LENS_ICRP": {
     "prefix": "G4_EYE_LENS_ICRP",
-    "body": [
-      "G4_EYE_LENS_ICRP"
-    ],
+    "body": ["G4_EYE_LENS_ICRP"],
     "description": "Geant4 NIST Material: G4_EYE_LENS_ICRP"
   },
   "G4 Material: G4_Er": {
     "prefix": "G4_Er",
-    "body": [
-      "G4_Er"
-    ],
+    "body": ["G4_Er"],
     "description": "Geant4 NIST Material: G4_Er"
   },
   "G4 Material: G4_Eu": {
     "prefix": "G4_Eu",
-    "body": [
-      "G4_Eu"
-    ],
+    "body": ["G4_Eu"],
     "description": "Geant4 NIST Material: G4_Eu"
   },
   "G4 Material: G4_F": {
     "prefix": "G4_F",
-    "body": [
-      "G4_F"
-    ],
+    "body": ["G4_F"],
     "description": "Geant4 NIST Material: G4_F"
   },
   "G4 Material: G4_FERRIC_OXIDE": {
     "prefix": "G4_FERRIC_OXIDE",
-    "body": [
-      "G4_FERRIC_OXIDE"
-    ],
+    "body": ["G4_FERRIC_OXIDE"],
     "description": "Geant4 NIST Material: G4_FERRIC_OXIDE"
   },
   "G4 Material: G4_FERROBORIDE": {
     "prefix": "G4_FERROBORIDE",
-    "body": [
-      "G4_FERROBORIDE"
-    ],
+    "body": ["G4_FERROBORIDE"],
     "description": "Geant4 NIST Material: G4_FERROBORIDE"
   },
   "G4 Material: G4_FERROUS_OXIDE": {
     "prefix": "G4_FERROUS_OXIDE",
-    "body": [
-      "G4_FERROUS_OXIDE"
-    ],
+    "body": ["G4_FERROUS_OXIDE"],
     "description": "Geant4 NIST Material: G4_FERROUS_OXIDE"
   },
   "G4 Material: G4_FERROUS_SULFATE": {
     "prefix": "G4_FERROUS_SULFATE",
-    "body": [
-      "G4_FERROUS_SULFATE"
-    ],
+    "body": ["G4_FERROUS_SULFATE"],
     "description": "Geant4 NIST Material: G4_FERROUS_SULFATE"
   },
   "G4 Material: G4_FREON-12": {
     "prefix": "G4_FREON-12",
-    "body": [
-      "G4_FREON-12"
-    ],
+    "body": ["G4_FREON-12"],
     "description": "Geant4 NIST Material: G4_FREON-12"
   },
   "G4 Material: G4_FREON-12B2": {
     "prefix": "G4_FREON-12B2",
-    "body": [
-      "G4_FREON-12B2"
-    ],
+    "body": ["G4_FREON-12B2"],
     "description": "Geant4 NIST Material: G4_FREON-12B2"
   },
   "G4 Material: G4_FREON-13": {
     "prefix": "G4_FREON-13",
-    "body": [
-      "G4_FREON-13"
-    ],
+    "body": ["G4_FREON-13"],
     "description": "Geant4 NIST Material: G4_FREON-13"
   },
   "G4 Material: G4_FREON-13B1": {
     "prefix": "G4_FREON-13B1",
-    "body": [
-      "G4_FREON-13B1"
-    ],
+    "body": ["G4_FREON-13B1"],
     "description": "Geant4 NIST Material: G4_FREON-13B1"
   },
   "G4 Material: G4_FREON-13I1": {
     "prefix": "G4_FREON-13I1",
-    "body": [
-      "G4_FREON-13I1"
-    ],
+    "body": ["G4_FREON-13I1"],
     "description": "Geant4 NIST Material: G4_FREON-13I1"
   },
   "G4 Material: G4_Fe": {
     "prefix": "G4_Fe",
-    "body": [
-      "G4_Fe"
-    ],
+    "body": ["G4_Fe"],
     "description": "Geant4 NIST Material: G4_Fe"
   },
   "G4 Material: G4_Fr": {
     "prefix": "G4_Fr",
-    "body": [
-      "G4_Fr"
-    ],
+    "body": ["G4_Fr"],
     "description": "Geant4 NIST Material: G4_Fr"
   },
   "G4 Material: G4_GADOLINIUM_OXYSULFIDE": {
     "prefix": "G4_GADOLINIUM_OXYSULFIDE",
-    "body": [
-      "G4_GADOLINIUM_OXYSULFIDE"
-    ],
+    "body": ["G4_GADOLINIUM_OXYSULFIDE"],
     "description": "Geant4 NIST Material: G4_GADOLINIUM_OXYSULFIDE"
   },
   "G4 Material: G4_GALLIUM_ARSENIDE": {
     "prefix": "G4_GALLIUM_ARSENIDE",
-    "body": [
-      "G4_GALLIUM_ARSENIDE"
-    ],
+    "body": ["G4_GALLIUM_ARSENIDE"],
     "description": "Geant4 NIST Material: G4_GALLIUM_ARSENIDE"
   },
   "G4 Material: G4_GEL_PHOTO_EMULSION": {
     "prefix": "G4_GEL_PHOTO_EMULSION",
-    "body": [
-      "G4_GEL_PHOTO_EMULSION"
-    ],
+    "body": ["G4_GEL_PHOTO_EMULSION"],
     "description": "Geant4 NIST Material: G4_GEL_PHOTO_EMULSION"
   },
   "G4 Material: G4_GLASS_LEAD": {
     "prefix": "G4_GLASS_LEAD",
-    "body": [
-      "G4_GLASS_LEAD"
-    ],
+    "body": ["G4_GLASS_LEAD"],
     "description": "Geant4 NIST Material: G4_GLASS_LEAD"
   },
   "G4 Material: G4_GLASS_PLATE": {
     "prefix": "G4_GLASS_PLATE",
-    "body": [
-      "G4_GLASS_PLATE"
-    ],
+    "body": ["G4_GLASS_PLATE"],
     "description": "Geant4 NIST Material: G4_GLASS_PLATE"
   },
   "G4 Material: G4_GLUTAMINE": {
     "prefix": "G4_GLUTAMINE",
-    "body": [
-      "G4_GLUTAMINE"
-    ],
+    "body": ["G4_GLUTAMINE"],
     "description": "Geant4 NIST Material: G4_GLUTAMINE"
   },
   "G4 Material: G4_GLYCEROL": {
     "prefix": "G4_GLYCEROL",
-    "body": [
-      "G4_GLYCEROL"
-    ],
+    "body": ["G4_GLYCEROL"],
     "description": "Geant4 NIST Material: G4_GLYCEROL"
   },
   "G4 Material: G4_GRAPHITE": {
     "prefix": "G4_GRAPHITE",
-    "body": [
-      "G4_GRAPHITE"
-    ],
+    "body": ["G4_GRAPHITE"],
     "description": "Geant4 NIST Material: G4_GRAPHITE"
   },
   "G4 Material: G4_GRAPHITE_POROUS": {
     "prefix": "G4_GRAPHITE_POROUS",
-    "body": [
-      "G4_GRAPHITE_POROUS"
-    ],
+    "body": ["G4_GRAPHITE_POROUS"],
     "description": "Geant4 NIST Material: G4_GRAPHITE_POROUS"
   },
   "G4 Material: G4_GUANINE": {
     "prefix": "G4_GUANINE",
-    "body": [
-      "G4_GUANINE"
-    ],
+    "body": ["G4_GUANINE"],
     "description": "Geant4 NIST Material: G4_GUANINE"
   },
   "G4 Material: G4_GYPSUM": {
     "prefix": "G4_GYPSUM",
-    "body": [
-      "G4_GYPSUM"
-    ],
+    "body": ["G4_GYPSUM"],
     "description": "Geant4 NIST Material: G4_GYPSUM"
   },
   "G4 Material: G4_Ga": {
     "prefix": "G4_Ga",
-    "body": [
-      "G4_Ga"
-    ],
+    "body": ["G4_Ga"],
     "description": "Geant4 NIST Material: G4_Ga"
   },
   "G4 Material: G4_Galactic": {
     "prefix": "G4_Galactic",
-    "body": [
-      "G4_Galactic"
-    ],
+    "body": ["G4_Galactic"],
     "description": "Geant4 NIST Material: G4_Galactic"
   },
   "G4 Material: G4_Gd": {
     "prefix": "G4_Gd",
-    "body": [
-      "G4_Gd"
-    ],
+    "body": ["G4_Gd"],
     "description": "Geant4 NIST Material: G4_Gd"
   },
   "G4 Material: G4_Ge": {
     "prefix": "G4_Ge",
-    "body": [
-      "G4_Ge"
-    ],
+    "body": ["G4_Ge"],
     "description": "Geant4 NIST Material: G4_Ge"
   },
   "G4 Material: G4_H": {
     "prefix": "G4_H",
-    "body": [
-      "G4_H"
-    ],
+    "body": ["G4_H"],
     "description": "Geant4 NIST Material: G4_H"
   },
   "G4 Material: G4_He": {
     "prefix": "G4_He",
-    "body": [
-      "G4_He"
-    ],
+    "body": ["G4_He"],
     "description": "Geant4 NIST Material: G4_He"
   },
   "G4 Material: G4_Hf": {
     "prefix": "G4_Hf",
-    "body": [
-      "G4_Hf"
-    ],
+    "body": ["G4_Hf"],
     "description": "Geant4 NIST Material: G4_Hf"
   },
   "G4 Material: G4_Hg": {
     "prefix": "G4_Hg",
-    "body": [
-      "G4_Hg"
-    ],
+    "body": ["G4_Hg"],
     "description": "Geant4 NIST Material: G4_Hg"
   },
   "G4 Material: G4_Ho": {
     "prefix": "G4_Ho",
-    "body": [
-      "G4_Ho"
-    ],
+    "body": ["G4_Ho"],
     "description": "Geant4 NIST Material: G4_Ho"
   },
   "G4 Material: G4_I": {
     "prefix": "G4_I",
-    "body": [
-      "G4_I"
-    ],
+    "body": ["G4_I"],
     "description": "Geant4 NIST Material: G4_I"
   },
   "G4 Material: G4_In": {
     "prefix": "G4_In",
-    "body": [
-      "G4_In"
-    ],
+    "body": ["G4_In"],
     "description": "Geant4 NIST Material: G4_In"
   },
   "G4 Material: G4_Ir": {
     "prefix": "G4_Ir",
-    "body": [
-      "G4_Ir"
-    ],
+    "body": ["G4_Ir"],
     "description": "Geant4 NIST Material: G4_Ir"
   },
   "G4 Material: G4_K": {
     "prefix": "G4_K",
-    "body": [
-      "G4_K"
-    ],
+    "body": ["G4_K"],
     "description": "Geant4 NIST Material: G4_K"
   },
   "G4 Material: G4_KAPTON": {
     "prefix": "G4_KAPTON",
-    "body": [
-      "G4_KAPTON"
-    ],
+    "body": ["G4_KAPTON"],
     "description": "Geant4 NIST Material: G4_KAPTON"
   },
   "G4 Material: G4_KEVLAR": {
     "prefix": "G4_KEVLAR",
-    "body": [
-      "G4_KEVLAR"
-    ],
+    "body": ["G4_KEVLAR"],
     "description": "Geant4 NIST Material: G4_KEVLAR"
   },
   "G4 Material: G4_Kr": {
     "prefix": "G4_Kr",
-    "body": [
-      "G4_Kr"
-    ],
+    "body": ["G4_Kr"],
     "description": "Geant4 NIST Material: G4_Kr"
   },
   "G4 Material: G4_LANTHANUM_OXYBROMIDE": {
     "prefix": "G4_LANTHANUM_OXYBROMIDE",
-    "body": [
-      "G4_LANTHANUM_OXYBROMIDE"
-    ],
+    "body": ["G4_LANTHANUM_OXYBROMIDE"],
     "description": "Geant4 NIST Material: G4_LANTHANUM_OXYBROMIDE"
   },
   "G4 Material: G4_LANTHANUM_OXYSULFIDE": {
     "prefix": "G4_LANTHANUM_OXYSULFIDE",
-    "body": [
-      "G4_LANTHANUM_OXYSULFIDE"
-    ],
+    "body": ["G4_LANTHANUM_OXYSULFIDE"],
     "description": "Geant4 NIST Material: G4_LANTHANUM_OXYSULFIDE"
   },
   "G4 Material: G4_LEAD_OXIDE": {
     "prefix": "G4_LEAD_OXIDE",
-    "body": [
-      "G4_LEAD_OXIDE"
-    ],
+    "body": ["G4_LEAD_OXIDE"],
     "description": "Geant4 NIST Material: G4_LEAD_OXIDE"
   },
   "G4 Material: G4_LITHIUM_AMIDE": {
     "prefix": "G4_LITHIUM_AMIDE",
-    "body": [
-      "G4_LITHIUM_AMIDE"
-    ],
+    "body": ["G4_LITHIUM_AMIDE"],
     "description": "Geant4 NIST Material: G4_LITHIUM_AMIDE"
   },
   "G4 Material: G4_LITHIUM_CARBONATE": {
     "prefix": "G4_LITHIUM_CARBONATE",
-    "body": [
-      "G4_LITHIUM_CARBONATE"
-    ],
+    "body": ["G4_LITHIUM_CARBONATE"],
     "description": "Geant4 NIST Material: G4_LITHIUM_CARBONATE"
   },
   "G4 Material: G4_LITHIUM_FLUORIDE": {
     "prefix": "G4_LITHIUM_FLUORIDE",
-    "body": [
-      "G4_LITHIUM_FLUORIDE"
-    ],
+    "body": ["G4_LITHIUM_FLUORIDE"],
     "description": "Geant4 NIST Material: G4_LITHIUM_FLUORIDE"
   },
   "G4 Material: G4_LITHIUM_HYDRIDE": {
     "prefix": "G4_LITHIUM_HYDRIDE",
-    "body": [
-      "G4_LITHIUM_HYDRIDE"
-    ],
+    "body": ["G4_LITHIUM_HYDRIDE"],
     "description": "Geant4 NIST Material: G4_LITHIUM_HYDRIDE"
   },
   "G4 Material: G4_LITHIUM_IODIDE": {
     "prefix": "G4_LITHIUM_IODIDE",
-    "body": [
-      "G4_LITHIUM_IODIDE"
-    ],
+    "body": ["G4_LITHIUM_IODIDE"],
     "description": "Geant4 NIST Material: G4_LITHIUM_IODIDE"
   },
   "G4 Material: G4_LITHIUM_OXIDE": {
     "prefix": "G4_LITHIUM_OXIDE",
-    "body": [
-      "G4_LITHIUM_OXIDE"
-    ],
+    "body": ["G4_LITHIUM_OXIDE"],
     "description": "Geant4 NIST Material: G4_LITHIUM_OXIDE"
   },
   "G4 Material: G4_LITHIUM_TETRABORATE": {
     "prefix": "G4_LITHIUM_TETRABORATE",
-    "body": [
-      "G4_LITHIUM_TETRABORATE"
-    ],
+    "body": ["G4_LITHIUM_TETRABORATE"],
     "description": "Geant4 NIST Material: G4_LITHIUM_TETRABORATE"
   },
   "G4 Material: G4_LUCITE": {
     "prefix": "G4_LUCITE",
-    "body": [
-      "G4_LUCITE"
-    ],
+    "body": ["G4_LUCITE"],
     "description": "Geant4 NIST Material: G4_LUCITE"
   },
   "G4 Material: G4_LUNG_ICRP": {
     "prefix": "G4_LUNG_ICRP",
-    "body": [
-      "G4_LUNG_ICRP"
-    ],
+    "body": ["G4_LUNG_ICRP"],
     "description": "Geant4 NIST Material: G4_LUNG_ICRP"
   },
   "G4 Material: G4_La": {
     "prefix": "G4_La",
-    "body": [
-      "G4_La"
-    ],
+    "body": ["G4_La"],
     "description": "Geant4 NIST Material: G4_La"
   },
   "G4 Material: G4_Li": {
     "prefix": "G4_Li",
-    "body": [
-      "G4_Li"
-    ],
+    "body": ["G4_Li"],
     "description": "Geant4 NIST Material: G4_Li"
   },
   "G4 Material: G4_Lu": {
     "prefix": "G4_Lu",
-    "body": [
-      "G4_Lu"
-    ],
+    "body": ["G4_Lu"],
     "description": "Geant4 NIST Material: G4_Lu"
   },
   "G4 Material: G4_M3_WAX": {
     "prefix": "G4_M3_WAX",
-    "body": [
-      "G4_M3_WAX"
-    ],
+    "body": ["G4_M3_WAX"],
     "description": "Geant4 NIST Material: G4_M3_WAX"
   },
   "G4 Material: G4_MAGNESIUM_CARBONATE": {
     "prefix": "G4_MAGNESIUM_CARBONATE",
-    "body": [
-      "G4_MAGNESIUM_CARBONATE"
-    ],
+    "body": ["G4_MAGNESIUM_CARBONATE"],
     "description": "Geant4 NIST Material: G4_MAGNESIUM_CARBONATE"
   },
   "G4 Material: G4_MAGNESIUM_FLUORIDE": {
     "prefix": "G4_MAGNESIUM_FLUORIDE",
-    "body": [
-      "G4_MAGNESIUM_FLUORIDE"
-    ],
+    "body": ["G4_MAGNESIUM_FLUORIDE"],
     "description": "Geant4 NIST Material: G4_MAGNESIUM_FLUORIDE"
   },
   "G4 Material: G4_MAGNESIUM_OXIDE": {
     "prefix": "G4_MAGNESIUM_OXIDE",
-    "body": [
-      "G4_MAGNESIUM_OXIDE"
-    ],
+    "body": ["G4_MAGNESIUM_OXIDE"],
     "description": "Geant4 NIST Material: G4_MAGNESIUM_OXIDE"
   },
   "G4 Material: G4_MAGNESIUM_TETRABORATE": {
     "prefix": "G4_MAGNESIUM_TETRABORATE",
-    "body": [
-      "G4_MAGNESIUM_TETRABORATE"
-    ],
+    "body": ["G4_MAGNESIUM_TETRABORATE"],
     "description": "Geant4 NIST Material: G4_MAGNESIUM_TETRABORATE"
   },
   "G4 Material: G4_MERCURIC_IODIDE": {
     "prefix": "G4_MERCURIC_IODIDE",
-    "body": [
-      "G4_MERCURIC_IODIDE"
-    ],
+    "body": ["G4_MERCURIC_IODIDE"],
     "description": "Geant4 NIST Material: G4_MERCURIC_IODIDE"
   },
   "G4 Material: G4_METHANE": {
     "prefix": "G4_METHANE",
-    "body": [
-      "G4_METHANE"
-    ],
+    "body": ["G4_METHANE"],
     "description": "Geant4 NIST Material: G4_METHANE"
   },
   "G4 Material: G4_METHANOL": {
     "prefix": "G4_METHANOL",
-    "body": [
-      "G4_METHANOL"
-    ],
+    "body": ["G4_METHANOL"],
     "description": "Geant4 NIST Material: G4_METHANOL"
   },
   "G4 Material: G4_MIX_D_WAX": {
     "prefix": "G4_MIX_D_WAX",
-    "body": [
-      "G4_MIX_D_WAX"
-    ],
+    "body": ["G4_MIX_D_WAX"],
     "description": "Geant4 NIST Material: G4_MIX_D_WAX"
   },
   "G4 Material: G4_MS20_TISSUE": {
     "prefix": "G4_MS20_TISSUE",
-    "body": [
-      "G4_MS20_TISSUE"
-    ],
+    "body": ["G4_MS20_TISSUE"],
     "description": "Geant4 NIST Material: G4_MS20_TISSUE"
   },
   "G4 Material: G4_MUSCLE_SKELETAL_ICRP": {
     "prefix": "G4_MUSCLE_SKELETAL_ICRP",
-    "body": [
-      "G4_MUSCLE_SKELETAL_ICRP"
-    ],
+    "body": ["G4_MUSCLE_SKELETAL_ICRP"],
     "description": "Geant4 NIST Material: G4_MUSCLE_SKELETAL_ICRP"
   },
   "G4 Material: G4_MUSCLE_STRIATED_ICRU": {
     "prefix": "G4_MUSCLE_STRIATED_ICRU",
-    "body": [
-      "G4_MUSCLE_STRIATED_ICRU"
-    ],
+    "body": ["G4_MUSCLE_STRIATED_ICRU"],
     "description": "Geant4 NIST Material: G4_MUSCLE_STRIATED_ICRU"
   },
   "G4 Material: G4_MUSCLE_WITHOUT_SUCROSE": {
     "prefix": "G4_MUSCLE_WITHOUT_SUCROSE",
-    "body": [
-      "G4_MUSCLE_WITHOUT_SUCROSE"
-    ],
+    "body": ["G4_MUSCLE_WITHOUT_SUCROSE"],
     "description": "Geant4 NIST Material: G4_MUSCLE_WITHOUT_SUCROSE"
   },
   "G4 Material: G4_MUSCLE_WITH_SUCROSE": {
     "prefix": "G4_MUSCLE_WITH_SUCROSE",
-    "body": [
-      "G4_MUSCLE_WITH_SUCROSE"
-    ],
+    "body": ["G4_MUSCLE_WITH_SUCROSE"],
     "description": "Geant4 NIST Material: G4_MUSCLE_WITH_SUCROSE"
   },
   "G4 Material: G4_MYLAR": {
     "prefix": "G4_MYLAR",
-    "body": [
-      "G4_MYLAR"
-    ],
+    "body": ["G4_MYLAR"],
     "description": "Geant4 NIST Material: G4_MYLAR"
   },
   "G4 Material: G4_Mg": {
     "prefix": "G4_Mg",
-    "body": [
-      "G4_Mg"
-    ],
+    "body": ["G4_Mg"],
     "description": "Geant4 NIST Material: G4_Mg"
   },
   "G4 Material: G4_Mn": {
     "prefix": "G4_Mn",
-    "body": [
-      "G4_Mn"
-    ],
+    "body": ["G4_Mn"],
     "description": "Geant4 NIST Material: G4_Mn"
   },
   "G4 Material: G4_Mo": {
     "prefix": "G4_Mo",
-    "body": [
-      "G4_Mo"
-    ],
+    "body": ["G4_Mo"],
     "description": "Geant4 NIST Material: G4_Mo"
   },
   "G4 Material: G4_N": {
     "prefix": "G4_N",
-    "body": [
-      "G4_N"
-    ],
+    "body": ["G4_N"],
     "description": "Geant4 NIST Material: G4_N"
   },
   "G4 Material: G4_N,N-DIMETHYL_FORMAMIDE": {
     "prefix": "G4_N,N-DIMETHYL_FORMAMIDE",
-    "body": [
-      "G4_N,N-DIMETHYL_FORMAMIDE"
-    ],
+    "body": ["G4_N,N-DIMETHYL_FORMAMIDE"],
     "description": "Geant4 NIST Material: G4_N,N-DIMETHYL_FORMAMIDE"
   },
   "G4 Material: G4_N-BUTYL_ALCOHOL": {
     "prefix": "G4_N-BUTYL_ALCOHOL",
-    "body": [
-      "G4_N-BUTYL_ALCOHOL"
-    ],
+    "body": ["G4_N-BUTYL_ALCOHOL"],
     "description": "Geant4 NIST Material: G4_N-BUTYL_ALCOHOL"
   },
   "G4 Material: G4_N-HEPTANE": {
     "prefix": "G4_N-HEPTANE",
-    "body": [
-      "G4_N-HEPTANE"
-    ],
+    "body": ["G4_N-HEPTANE"],
     "description": "Geant4 NIST Material: G4_N-HEPTANE"
   },
   "G4 Material: G4_N-HEXANE": {
     "prefix": "G4_N-HEXANE",
-    "body": [
-      "G4_N-HEXANE"
-    ],
+    "body": ["G4_N-HEXANE"],
     "description": "Geant4 NIST Material: G4_N-HEXANE"
   },
   "G4 Material: G4_N-PENTANE": {
     "prefix": "G4_N-PENTANE",
-    "body": [
-      "G4_N-PENTANE"
-    ],
+    "body": ["G4_N-PENTANE"],
     "description": "Geant4 NIST Material: G4_N-PENTANE"
   },
   "G4 Material: G4_N-PROPYL_ALCOHOL": {
     "prefix": "G4_N-PROPYL_ALCOHOL",
-    "body": [
-      "G4_N-PROPYL_ALCOHOL"
-    ],
+    "body": ["G4_N-PROPYL_ALCOHOL"],
     "description": "Geant4 NIST Material: G4_N-PROPYL_ALCOHOL"
   },
   "G4 Material: G4_NAPHTHALENE": {
     "prefix": "G4_NAPHTHALENE",
-    "body": [
-      "G4_NAPHTHALENE"
-    ],
+    "body": ["G4_NAPHTHALENE"],
     "description": "Geant4 NIST Material: G4_NAPHTHALENE"
   },
   "G4 Material: G4_NEOPRENE": {
     "prefix": "G4_NEOPRENE",
-    "body": [
-      "G4_NEOPRENE"
-    ],
+    "body": ["G4_NEOPRENE"],
     "description": "Geant4 NIST Material: G4_NEOPRENE"
   },
   "G4 Material: G4_NITROBENZENE": {
     "prefix": "G4_NITROBENZENE",
-    "body": [
-      "G4_NITROBENZENE"
-    ],
+    "body": ["G4_NITROBENZENE"],
     "description": "Geant4 NIST Material: G4_NITROBENZENE"
   },
   "G4 Material: G4_NITROUS_OXIDE": {
     "prefix": "G4_NITROUS_OXIDE",
-    "body": [
-      "G4_NITROUS_OXIDE"
-    ],
+    "body": ["G4_NITROUS_OXIDE"],
     "description": "Geant4 NIST Material: G4_NITROUS_OXIDE"
   },
   "G4 Material: G4_NYLON-11_RILSAN": {
     "prefix": "G4_NYLON-11_RILSAN",
-    "body": [
-      "G4_NYLON-11_RILSAN"
-    ],
+    "body": ["G4_NYLON-11_RILSAN"],
     "description": "Geant4 NIST Material: G4_NYLON-11_RILSAN"
   },
   "G4 Material: G4_NYLON-6-10": {
     "prefix": "G4_NYLON-6-10",
-    "body": [
-      "G4_NYLON-6-10"
-    ],
+    "body": ["G4_NYLON-6-10"],
     "description": "Geant4 NIST Material: G4_NYLON-6-10"
   },
   "G4 Material: G4_NYLON-6-6": {
     "prefix": "G4_NYLON-6-6",
-    "body": [
-      "G4_NYLON-6-6"
-    ],
+    "body": ["G4_NYLON-6-6"],
     "description": "Geant4 NIST Material: G4_NYLON-6-6"
   },
   "G4 Material: G4_NYLON-8062": {
     "prefix": "G4_NYLON-8062",
-    "body": [
-      "G4_NYLON-8062"
-    ],
+    "body": ["G4_NYLON-8062"],
     "description": "Geant4 NIST Material: G4_NYLON-8062"
   },
   "G4 Material: G4_Na": {
     "prefix": "G4_Na",
-    "body": [
-      "G4_Na"
-    ],
+    "body": ["G4_Na"],
     "description": "Geant4 NIST Material: G4_Na"
   },
   "G4 Material: G4_Nb": {
     "prefix": "G4_Nb",
-    "body": [
-      "G4_Nb"
-    ],
+    "body": ["G4_Nb"],
     "description": "Geant4 NIST Material: G4_Nb"
   },
   "G4 Material: G4_Nd": {
     "prefix": "G4_Nd",
-    "body": [
-      "G4_Nd"
-    ],
+    "body": ["G4_Nd"],
     "description": "Geant4 NIST Material: G4_Nd"
   },
   "G4 Material: G4_Ne": {
     "prefix": "G4_Ne",
-    "body": [
-      "G4_Ne"
-    ],
+    "body": ["G4_Ne"],
     "description": "Geant4 NIST Material: G4_Ne"
   },
   "G4 Material: G4_Ni": {
     "prefix": "G4_Ni",
-    "body": [
-      "G4_Ni"
-    ],
+    "body": ["G4_Ni"],
     "description": "Geant4 NIST Material: G4_Ni"
   },
   "G4 Material: G4_Np": {
     "prefix": "G4_Np",
-    "body": [
-      "G4_Np"
-    ],
+    "body": ["G4_Np"],
     "description": "Geant4 NIST Material: G4_Np"
   },
   "G4 Material: G4_O": {
     "prefix": "G4_O",
-    "body": [
-      "G4_O"
-    ],
+    "body": ["G4_O"],
     "description": "Geant4 NIST Material: G4_O"
   },
   "G4 Material: G4_OCTADECANOL": {
     "prefix": "G4_OCTADECANOL",
-    "body": [
-      "G4_OCTADECANOL"
-    ],
+    "body": ["G4_OCTADECANOL"],
     "description": "Geant4 NIST Material: G4_OCTADECANOL"
   },
   "G4 Material: G4_OCTANE": {
     "prefix": "G4_OCTANE",
-    "body": [
-      "G4_OCTANE"
-    ],
+    "body": ["G4_OCTANE"],
     "description": "Geant4 NIST Material: G4_OCTANE"
   },
   "G4 Material: G4_Os": {
     "prefix": "G4_Os",
-    "body": [
-      "G4_Os"
-    ],
+    "body": ["G4_Os"],
     "description": "Geant4 NIST Material: G4_Os"
   },
   "G4 Material: G4_P": {
     "prefix": "G4_P",
-    "body": [
-      "G4_P"
-    ],
+    "body": ["G4_P"],
     "description": "Geant4 NIST Material: G4_P"
   },
   "G4 Material: G4_PARAFFIN": {
     "prefix": "G4_PARAFFIN",
-    "body": [
-      "G4_PARAFFIN"
-    ],
+    "body": ["G4_PARAFFIN"],
     "description": "Geant4 NIST Material: G4_PARAFFIN"
   },
   "G4 Material: G4_PHOSPHORIC_ACID": {
     "prefix": "G4_PHOSPHORIC_ACID",
-    "body": [
-      "G4_PHOSPHORIC_ACID"
-    ],
+    "body": ["G4_PHOSPHORIC_ACID"],
     "description": "Geant4 NIST Material: G4_PHOSPHORIC_ACID"
   },
   "G4 Material: G4_PHOTO_EMULSION": {
     "prefix": "G4_PHOTO_EMULSION",
-    "body": [
-      "G4_PHOTO_EMULSION"
-    ],
+    "body": ["G4_PHOTO_EMULSION"],
     "description": "Geant4 NIST Material: G4_PHOTO_EMULSION"
   },
   "G4 Material: G4_PLASTIC_SC_VINYLTOLUENE": {
     "prefix": "G4_PLASTIC_SC_VINYLTOLUENE",
-    "body": [
-      "G4_PLASTIC_SC_VINYLTOLUENE"
-    ],
+    "body": ["G4_PLASTIC_SC_VINYLTOLUENE"],
     "description": "Geant4 NIST Material: G4_PLASTIC_SC_VINYLTOLUENE"
   },
   "G4 Material: G4_PLEXIGLASS": {
     "prefix": "G4_PLEXIGLASS",
-    "body": [
-      "G4_PLEXIGLASS"
-    ],
+    "body": ["G4_PLEXIGLASS"],
     "description": "Geant4 NIST Material: G4_PLEXIGLASS"
   },
   "G4 Material: G4_PLUTONIUM_DIOXIDE": {
     "prefix": "G4_PLUTONIUM_DIOXIDE",
-    "body": [
-      "G4_PLUTONIUM_DIOXIDE"
-    ],
+    "body": ["G4_PLUTONIUM_DIOXIDE"],
     "description": "Geant4 NIST Material: G4_PLUTONIUM_DIOXIDE"
   },
   "G4 Material: G4_POLYACRYLONITRILE": {
     "prefix": "G4_POLYACRYLONITRILE",
-    "body": [
-      "G4_POLYACRYLONITRILE"
-    ],
+    "body": ["G4_POLYACRYLONITRILE"],
     "description": "Geant4 NIST Material: G4_POLYACRYLONITRILE"
   },
   "G4 Material: G4_POLYCARBONATE": {
     "prefix": "G4_POLYCARBONATE",
-    "body": [
-      "G4_POLYCARBONATE"
-    ],
+    "body": ["G4_POLYCARBONATE"],
     "description": "Geant4 NIST Material: G4_POLYCARBONATE"
   },
   "G4 Material: G4_POLYCHLOROSTYRENE": {
     "prefix": "G4_POLYCHLOROSTYRENE",
-    "body": [
-      "G4_POLYCHLOROSTYRENE"
-    ],
+    "body": ["G4_POLYCHLOROSTYRENE"],
     "description": "Geant4 NIST Material: G4_POLYCHLOROSTYRENE"
   },
   "G4 Material: G4_POLYETHYLENE": {
     "prefix": "G4_POLYETHYLENE",
-    "body": [
-      "G4_POLYETHYLENE"
-    ],
+    "body": ["G4_POLYETHYLENE"],
     "description": "Geant4 NIST Material: G4_POLYETHYLENE"
   },
   "G4 Material: G4_POLYOXYMETHYLENE": {
     "prefix": "G4_POLYOXYMETHYLENE",
-    "body": [
-      "G4_POLYOXYMETHYLENE"
-    ],
+    "body": ["G4_POLYOXYMETHYLENE"],
     "description": "Geant4 NIST Material: G4_POLYOXYMETHYLENE"
   },
   "G4 Material: G4_POLYPROPYLENE": {
     "prefix": "G4_POLYPROPYLENE",
-    "body": [
-      "G4_POLYPROPYLENE"
-    ],
+    "body": ["G4_POLYPROPYLENE"],
     "description": "Geant4 NIST Material: G4_POLYPROPYLENE"
   },
   "G4 Material: G4_POLYSTYRENE": {
     "prefix": "G4_POLYSTYRENE",
-    "body": [
-      "G4_POLYSTYRENE"
-    ],
+    "body": ["G4_POLYSTYRENE"],
     "description": "Geant4 NIST Material: G4_POLYSTYRENE"
   },
   "G4 Material: G4_POLYTRIFLUOROCHLOROETHYLENE": {
     "prefix": "G4_POLYTRIFLUOROCHLOROETHYLENE",
-    "body": [
-      "G4_POLYTRIFLUOROCHLOROETHYLENE"
-    ],
+    "body": ["G4_POLYTRIFLUOROCHLOROETHYLENE"],
     "description": "Geant4 NIST Material: G4_POLYTRIFLUOROCHLOROETHYLENE"
   },
   "G4 Material: G4_POLYVINYLIDENE_CHLORIDE": {
     "prefix": "G4_POLYVINYLIDENE_CHLORIDE",
-    "body": [
-      "G4_POLYVINYLIDENE_CHLORIDE"
-    ],
+    "body": ["G4_POLYVINYLIDENE_CHLORIDE"],
     "description": "Geant4 NIST Material: G4_POLYVINYLIDENE_CHLORIDE"
   },
   "G4 Material: G4_POLYVINYLIDENE_FLUORIDE": {
     "prefix": "G4_POLYVINYLIDENE_FLUORIDE",
-    "body": [
-      "G4_POLYVINYLIDENE_FLUORIDE"
-    ],
+    "body": ["G4_POLYVINYLIDENE_FLUORIDE"],
     "description": "Geant4 NIST Material: G4_POLYVINYLIDENE_FLUORIDE"
   },
   "G4 Material: G4_POLYVINYL_ACETATE": {
     "prefix": "G4_POLYVINYL_ACETATE",
-    "body": [
-      "G4_POLYVINYL_ACETATE"
-    ],
+    "body": ["G4_POLYVINYL_ACETATE"],
     "description": "Geant4 NIST Material: G4_POLYVINYL_ACETATE"
   },
   "G4 Material: G4_POLYVINYL_ALCOHOL": {
     "prefix": "G4_POLYVINYL_ALCOHOL",
-    "body": [
-      "G4_POLYVINYL_ALCOHOL"
-    ],
+    "body": ["G4_POLYVINYL_ALCOHOL"],
     "description": "Geant4 NIST Material: G4_POLYVINYL_ALCOHOL"
   },
   "G4 Material: G4_POLYVINYL_BUTYRAL": {
     "prefix": "G4_POLYVINYL_BUTYRAL",
-    "body": [
-      "G4_POLYVINYL_BUTYRAL"
-    ],
+    "body": ["G4_POLYVINYL_BUTYRAL"],
     "description": "Geant4 NIST Material: G4_POLYVINYL_BUTYRAL"
   },
   "G4 Material: G4_POLYVINYL_CHLORIDE": {
     "prefix": "G4_POLYVINYL_CHLORIDE",
-    "body": [
-      "G4_POLYVINYL_CHLORIDE"
-    ],
+    "body": ["G4_POLYVINYL_CHLORIDE"],
     "description": "Geant4 NIST Material: G4_POLYVINYL_CHLORIDE"
   },
   "G4 Material: G4_POLYVINYL_PYRROLIDONE": {
     "prefix": "G4_POLYVINYL_PYRROLIDONE",
-    "body": [
-      "G4_POLYVINYL_PYRROLIDONE"
-    ],
+    "body": ["G4_POLYVINYL_PYRROLIDONE"],
     "description": "Geant4 NIST Material: G4_POLYVINYL_PYRROLIDONE"
   },
   "G4 Material: G4_POTASSIUM_IODIDE": {
     "prefix": "G4_POTASSIUM_IODIDE",
-    "body": [
-      "G4_POTASSIUM_IODIDE"
-    ],
+    "body": ["G4_POTASSIUM_IODIDE"],
     "description": "Geant4 NIST Material: G4_POTASSIUM_IODIDE"
   },
   "G4 Material: G4_POTASSIUM_OXIDE": {
     "prefix": "G4_POTASSIUM_OXIDE",
-    "body": [
-      "G4_POTASSIUM_OXIDE"
-    ],
+    "body": ["G4_POTASSIUM_OXIDE"],
     "description": "Geant4 NIST Material: G4_POTASSIUM_OXIDE"
   },
   "G4 Material: G4_PROPANE": {
     "prefix": "G4_PROPANE",
-    "body": [
-      "G4_PROPANE"
-    ],
+    "body": ["G4_PROPANE"],
     "description": "Geant4 NIST Material: G4_PROPANE"
   },
   "G4 Material: G4_PYRIDINE": {
     "prefix": "G4_PYRIDINE",
-    "body": [
-      "G4_PYRIDINE"
-    ],
+    "body": ["G4_PYRIDINE"],
     "description": "Geant4 NIST Material: G4_PYRIDINE"
   },
   "G4 Material: G4_Pa": {
     "prefix": "G4_Pa",
-    "body": [
-      "G4_Pa"
-    ],
+    "body": ["G4_Pa"],
     "description": "Geant4 NIST Material: G4_Pa"
   },
   "G4 Material: G4_Pb": {
     "prefix": "G4_Pb",
-    "body": [
-      "G4_Pb"
-    ],
+    "body": ["G4_Pb"],
     "description": "Geant4 NIST Material: G4_Pb"
   },
   "G4 Material: G4_PbWO4": {
     "prefix": "G4_PbWO4",
-    "body": [
-      "G4_PbWO4"
-    ],
+    "body": ["G4_PbWO4"],
     "description": "Geant4 NIST Material: G4_PbWO4"
   },
   "G4 Material: G4_Pd": {
     "prefix": "G4_Pd",
-    "body": [
-      "G4_Pd"
-    ],
+    "body": ["G4_Pd"],
     "description": "Geant4 NIST Material: G4_Pd"
   },
   "G4 Material: G4_Pm": {
     "prefix": "G4_Pm",
-    "body": [
-      "G4_Pm"
-    ],
+    "body": ["G4_Pm"],
     "description": "Geant4 NIST Material: G4_Pm"
   },
   "G4 Material: G4_Po": {
     "prefix": "G4_Po",
-    "body": [
-      "G4_Po"
-    ],
+    "body": ["G4_Po"],
     "description": "Geant4 NIST Material: G4_Po"
   },
   "G4 Material: G4_Pr": {
     "prefix": "G4_Pr",
-    "body": [
-      "G4_Pr"
-    ],
+    "body": ["G4_Pr"],
     "description": "Geant4 NIST Material: G4_Pr"
   },
   "G4 Material: G4_Pt": {
     "prefix": "G4_Pt",
-    "body": [
-      "G4_Pt"
-    ],
+    "body": ["G4_Pt"],
     "description": "Geant4 NIST Material: G4_Pt"
   },
   "G4 Material: G4_Pu": {
     "prefix": "G4_Pu",
-    "body": [
-      "G4_Pu"
-    ],
+    "body": ["G4_Pu"],
     "description": "Geant4 NIST Material: G4_Pu"
   },
   "G4 Material: G4_Pyrex_Glass": {
     "prefix": "G4_Pyrex_Glass",
-    "body": [
-      "G4_Pyrex_Glass"
-    ],
+    "body": ["G4_Pyrex_Glass"],
     "description": "Geant4 NIST Material: G4_Pyrex_Glass"
   },
   "G4 Material: G4_RUBBER_BUTYL": {
     "prefix": "G4_RUBBER_BUTYL",
-    "body": [
-      "G4_RUBBER_BUTYL"
-    ],
+    "body": ["G4_RUBBER_BUTYL"],
     "description": "Geant4 NIST Material: G4_RUBBER_BUTYL"
   },
   "G4 Material: G4_RUBBER_NATURAL": {
     "prefix": "G4_RUBBER_NATURAL",
-    "body": [
-      "G4_RUBBER_NATURAL"
-    ],
+    "body": ["G4_RUBBER_NATURAL"],
     "description": "Geant4 NIST Material: G4_RUBBER_NATURAL"
   },
   "G4 Material: G4_RUBBER_NEOPRENE": {
     "prefix": "G4_RUBBER_NEOPRENE",
-    "body": [
-      "G4_RUBBER_NEOPRENE"
-    ],
+    "body": ["G4_RUBBER_NEOPRENE"],
     "description": "Geant4 NIST Material: G4_RUBBER_NEOPRENE"
   },
   "G4 Material: G4_Ra": {
     "prefix": "G4_Ra",
-    "body": [
-      "G4_Ra"
-    ],
+    "body": ["G4_Ra"],
     "description": "Geant4 NIST Material: G4_Ra"
   },
   "G4 Material: G4_Rb": {
     "prefix": "G4_Rb",
-    "body": [
-      "G4_Rb"
-    ],
+    "body": ["G4_Rb"],
     "description": "Geant4 NIST Material: G4_Rb"
   },
   "G4 Material: G4_Re": {
     "prefix": "G4_Re",
-    "body": [
-      "G4_Re"
-    ],
+    "body": ["G4_Re"],
     "description": "Geant4 NIST Material: G4_Re"
   },
   "G4 Material: G4_Rh": {
     "prefix": "G4_Rh",
-    "body": [
-      "G4_Rh"
-    ],
+    "body": ["G4_Rh"],
     "description": "Geant4 NIST Material: G4_Rh"
   },
   "G4 Material: G4_Rn": {
     "prefix": "G4_Rn",
-    "body": [
-      "G4_Rn"
-    ],
+    "body": ["G4_Rn"],
     "description": "Geant4 NIST Material: G4_Rn"
   },
   "G4 Material: G4_Ru": {
     "prefix": "G4_Ru",
-    "body": [
-      "G4_Ru"
-    ],
+    "body": ["G4_Ru"],
     "description": "Geant4 NIST Material: G4_Ru"
   },
   "G4 Material: G4_S": {
     "prefix": "G4_S",
-    "body": [
-      "G4_S"
-    ],
+    "body": ["G4_S"],
     "description": "Geant4 NIST Material: G4_S"
   },
   "G4 Material: G4_SILICON_DIOXIDE": {
     "prefix": "G4_SILICON_DIOXIDE",
-    "body": [
-      "G4_SILICON_DIOXIDE"
-    ],
+    "body": ["G4_SILICON_DIOXIDE"],
     "description": "Geant4 NIST Material: G4_SILICON_DIOXIDE"
   },
   "G4 Material: G4_SILVER_BROMIDE": {
     "prefix": "G4_SILVER_BROMIDE",
-    "body": [
-      "G4_SILVER_BROMIDE"
-    ],
+    "body": ["G4_SILVER_BROMIDE"],
     "description": "Geant4 NIST Material: G4_SILVER_BROMIDE"
   },
   "G4 Material: G4_SILVER_CHLORIDE": {
     "prefix": "G4_SILVER_CHLORIDE",
-    "body": [
-      "G4_SILVER_CHLORIDE"
-    ],
+    "body": ["G4_SILVER_CHLORIDE"],
     "description": "Geant4 NIST Material: G4_SILVER_CHLORIDE"
   },
   "G4 Material: G4_SILVER_HALIDES": {
     "prefix": "G4_SILVER_HALIDES",
-    "body": [
-      "G4_SILVER_HALIDES"
-    ],
+    "body": ["G4_SILVER_HALIDES"],
     "description": "Geant4 NIST Material: G4_SILVER_HALIDES"
   },
   "G4 Material: G4_SILVER_IODIDE": {
     "prefix": "G4_SILVER_IODIDE",
-    "body": [
-      "G4_SILVER_IODIDE"
-    ],
+    "body": ["G4_SILVER_IODIDE"],
     "description": "Geant4 NIST Material: G4_SILVER_IODIDE"
   },
   "G4 Material: G4_SKIN_ICRP": {
     "prefix": "G4_SKIN_ICRP",
-    "body": [
-      "G4_SKIN_ICRP"
-    ],
+    "body": ["G4_SKIN_ICRP"],
     "description": "Geant4 NIST Material: G4_SKIN_ICRP"
   },
   "G4 Material: G4_SODIUM_CARBONATE": {
     "prefix": "G4_SODIUM_CARBONATE",
-    "body": [
-      "G4_SODIUM_CARBONATE"
-    ],
+    "body": ["G4_SODIUM_CARBONATE"],
     "description": "Geant4 NIST Material: G4_SODIUM_CARBONATE"
   },
   "G4 Material: G4_SODIUM_IODIDE": {
     "prefix": "G4_SODIUM_IODIDE",
-    "body": [
-      "G4_SODIUM_IODIDE"
-    ],
+    "body": ["G4_SODIUM_IODIDE"],
     "description": "Geant4 NIST Material: G4_SODIUM_IODIDE"
   },
   "G4 Material: G4_SODIUM_MONOXIDE": {
     "prefix": "G4_SODIUM_MONOXIDE",
-    "body": [
-      "G4_SODIUM_MONOXIDE"
-    ],
+    "body": ["G4_SODIUM_MONOXIDE"],
     "description": "Geant4 NIST Material: G4_SODIUM_MONOXIDE"
   },
   "G4 Material: G4_SODIUM_NITRATE": {
     "prefix": "G4_SODIUM_NITRATE",
-    "body": [
-      "G4_SODIUM_NITRATE"
-    ],
+    "body": ["G4_SODIUM_NITRATE"],
     "description": "Geant4 NIST Material: G4_SODIUM_NITRATE"
   },
   "G4 Material: G4_STAINLESS-STEEL": {
     "prefix": "G4_STAINLESS-STEEL",
-    "body": [
-      "G4_STAINLESS-STEEL"
-    ],
+    "body": ["G4_STAINLESS-STEEL"],
     "description": "Geant4 NIST Material: G4_STAINLESS-STEEL"
   },
   "G4 Material: G4_STILBENE": {
     "prefix": "G4_STILBENE",
-    "body": [
-      "G4_STILBENE"
-    ],
+    "body": ["G4_STILBENE"],
     "description": "Geant4 NIST Material: G4_STILBENE"
   },
   "G4 Material: G4_SUCROSE": {
     "prefix": "G4_SUCROSE",
-    "body": [
-      "G4_SUCROSE"
-    ],
+    "body": ["G4_SUCROSE"],
     "description": "Geant4 NIST Material: G4_SUCROSE"
   },
   "G4 Material: G4_Sb": {
     "prefix": "G4_Sb",
-    "body": [
-      "G4_Sb"
-    ],
+    "body": ["G4_Sb"],
     "description": "Geant4 NIST Material: G4_Sb"
   },
   "G4 Material: G4_Sc": {
     "prefix": "G4_Sc",
-    "body": [
-      "G4_Sc"
-    ],
+    "body": ["G4_Sc"],
     "description": "Geant4 NIST Material: G4_Sc"
   },
   "G4 Material: G4_Se": {
     "prefix": "G4_Se",
-    "body": [
-      "G4_Se"
-    ],
+    "body": ["G4_Se"],
     "description": "Geant4 NIST Material: G4_Se"
   },
   "G4 Material: G4_Si": {
     "prefix": "G4_Si",
-    "body": [
-      "G4_Si"
-    ],
+    "body": ["G4_Si"],
     "description": "Geant4 NIST Material: G4_Si"
   },
   "G4 Material: G4_Sm": {
     "prefix": "G4_Sm",
-    "body": [
-      "G4_Sm"
-    ],
+    "body": ["G4_Sm"],
     "description": "Geant4 NIST Material: G4_Sm"
   },
   "G4 Material: G4_Sn": {
     "prefix": "G4_Sn",
-    "body": [
-      "G4_Sn"
-    ],
+    "body": ["G4_Sn"],
     "description": "Geant4 NIST Material: G4_Sn"
   },
   "G4 Material: G4_Sr": {
     "prefix": "G4_Sr",
-    "body": [
-      "G4_Sr"
-    ],
+    "body": ["G4_Sr"],
     "description": "Geant4 NIST Material: G4_Sr"
   },
   "G4 Material: G4_TEFLON": {
     "prefix": "G4_TEFLON",
-    "body": [
-      "G4_TEFLON"
-    ],
+    "body": ["G4_TEFLON"],
     "description": "Geant4 NIST Material: G4_TEFLON"
   },
   "G4 Material: G4_TERPHENYL": {
     "prefix": "G4_TERPHENYL",
-    "body": [
-      "G4_TERPHENYL"
-    ],
+    "body": ["G4_TERPHENYL"],
     "description": "Geant4 NIST Material: G4_TERPHENYL"
   },
   "G4 Material: G4_TESTIS_ICRP": {
     "prefix": "G4_TESTIS_ICRP",
-    "body": [
-      "G4_TESTIS_ICRP"
-    ],
+    "body": ["G4_TESTIS_ICRP"],
     "description": "Geant4 NIST Material: G4_TESTIS_ICRP"
   },
   "G4 Material: G4_TETRACHLOROETHYLENE": {
     "prefix": "G4_TETRACHLOROETHYLENE",
-    "body": [
-      "G4_TETRACHLOROETHYLENE"
-    ],
+    "body": ["G4_TETRACHLOROETHYLENE"],
     "description": "Geant4 NIST Material: G4_TETRACHLOROETHYLENE"
   },
   "G4 Material: G4_THALLIUM_CHLORIDE": {
     "prefix": "G4_THALLIUM_CHLORIDE",
-    "body": [
-      "G4_THALLIUM_CHLORIDE"
-    ],
+    "body": ["G4_THALLIUM_CHLORIDE"],
     "description": "Geant4 NIST Material: G4_THALLIUM_CHLORIDE"
   },
   "G4 Material: G4_THYMINE": {
     "prefix": "G4_THYMINE",
-    "body": [
-      "G4_THYMINE"
-    ],
+    "body": ["G4_THYMINE"],
     "description": "Geant4 NIST Material: G4_THYMINE"
   },
   "G4 Material: G4_TISSUE-METHANE": {
     "prefix": "G4_TISSUE-METHANE",
-    "body": [
-      "G4_TISSUE-METHANE"
-    ],
+    "body": ["G4_TISSUE-METHANE"],
     "description": "Geant4 NIST Material: G4_TISSUE-METHANE"
   },
   "G4 Material: G4_TISSUE-PROPANE": {
     "prefix": "G4_TISSUE-PROPANE",
-    "body": [
-      "G4_TISSUE-PROPANE"
-    ],
+    "body": ["G4_TISSUE-PROPANE"],
     "description": "Geant4 NIST Material: G4_TISSUE-PROPANE"
   },
   "G4 Material: G4_TISSUE_SOFT_ICRP": {
     "prefix": "G4_TISSUE_SOFT_ICRP",
-    "body": [
-      "G4_TISSUE_SOFT_ICRP"
-    ],
+    "body": ["G4_TISSUE_SOFT_ICRP"],
     "description": "Geant4 NIST Material: G4_TISSUE_SOFT_ICRP"
   },
   "G4 Material: G4_TISSUE_SOFT_ICRU-4": {
     "prefix": "G4_TISSUE_SOFT_ICRU-4",
-    "body": [
-      "G4_TISSUE_SOFT_ICRU-4"
-    ],
+    "body": ["G4_TISSUE_SOFT_ICRU-4"],
     "description": "Geant4 NIST Material: G4_TISSUE_SOFT_ICRU-4"
   },
   "G4 Material: G4_TITANIUM_DIOXIDE": {
     "prefix": "G4_TITANIUM_DIOXIDE",
-    "body": [
-      "G4_TITANIUM_DIOXIDE"
-    ],
+    "body": ["G4_TITANIUM_DIOXIDE"],
     "description": "Geant4 NIST Material: G4_TITANIUM_DIOXIDE"
   },
   "G4 Material: G4_TOLUENE": {
     "prefix": "G4_TOLUENE",
-    "body": [
-      "G4_TOLUENE"
-    ],
+    "body": ["G4_TOLUENE"],
     "description": "Geant4 NIST Material: G4_TOLUENE"
   },
   "G4 Material: G4_TRICHLOROETHYLENE": {
     "prefix": "G4_TRICHLOROETHYLENE",
-    "body": [
-      "G4_TRICHLOROETHYLENE"
-    ],
+    "body": ["G4_TRICHLOROETHYLENE"],
     "description": "Geant4 NIST Material: G4_TRICHLOROETHYLENE"
   },
   "G4 Material: G4_TRIETHYL_PHOSPHATE": {
     "prefix": "G4_TRIETHYL_PHOSPHATE",
-    "body": [
-      "G4_TRIETHYL_PHOSPHATE"
-    ],
+    "body": ["G4_TRIETHYL_PHOSPHATE"],
     "description": "Geant4 NIST Material: G4_TRIETHYL_PHOSPHATE"
   },
   "G4 Material: G4_TUNGSTEN_HEXAFLUORIDE": {
     "prefix": "G4_TUNGSTEN_HEXAFLUORIDE",
-    "body": [
-      "G4_TUNGSTEN_HEXAFLUORIDE"
-    ],
+    "body": ["G4_TUNGSTEN_HEXAFLUORIDE"],
     "description": "Geant4 NIST Material: G4_TUNGSTEN_HEXAFLUORIDE"
   },
   "G4 Material: G4_Ta": {
     "prefix": "G4_Ta",
-    "body": [
-      "G4_Ta"
-    ],
+    "body": ["G4_Ta"],
     "description": "Geant4 NIST Material: G4_Ta"
   },
   "G4 Material: G4_Tb": {
     "prefix": "G4_Tb",
-    "body": [
-      "G4_Tb"
-    ],
+    "body": ["G4_Tb"],
     "description": "Geant4 NIST Material: G4_Tb"
   },
   "G4 Material: G4_Tc": {
     "prefix": "G4_Tc",
-    "body": [
-      "G4_Tc"
-    ],
+    "body": ["G4_Tc"],
     "description": "Geant4 NIST Material: G4_Tc"
   },
   "G4 Material: G4_Te": {
     "prefix": "G4_Te",
-    "body": [
-      "G4_Te"
-    ],
+    "body": ["G4_Te"],
     "description": "Geant4 NIST Material: G4_Te"
   },
   "G4 Material: G4_Th": {
     "prefix": "G4_Th",
-    "body": [
-      "G4_Th"
-    ],
+    "body": ["G4_Th"],
     "description": "Geant4 NIST Material: G4_Th"
   },
   "G4 Material: G4_Ti": {
     "prefix": "G4_Ti",
-    "body": [
-      "G4_Ti"
-    ],
+    "body": ["G4_Ti"],
     "description": "Geant4 NIST Material: G4_Ti"
   },
   "G4 Material: G4_Tl": {
     "prefix": "G4_Tl",
-    "body": [
-      "G4_Tl"
-    ],
+    "body": ["G4_Tl"],
     "description": "Geant4 NIST Material: G4_Tl"
   },
   "G4 Material: G4_Tm": {
     "prefix": "G4_Tm",
-    "body": [
-      "G4_Tm"
-    ],
+    "body": ["G4_Tm"],
     "description": "Geant4 NIST Material: G4_Tm"
   },
   "G4 Material: G4_U": {
     "prefix": "G4_U",
-    "body": [
-      "G4_U"
-    ],
+    "body": ["G4_U"],
     "description": "Geant4 NIST Material: G4_U"
   },
   "G4 Material: G4_URACIL": {
     "prefix": "G4_URACIL",
-    "body": [
-      "G4_URACIL"
-    ],
+    "body": ["G4_URACIL"],
     "description": "Geant4 NIST Material: G4_URACIL"
   },
   "G4 Material: G4_URANIUM_DICARBIDE": {
     "prefix": "G4_URANIUM_DICARBIDE",
-    "body": [
-      "G4_URANIUM_DICARBIDE"
-    ],
+    "body": ["G4_URANIUM_DICARBIDE"],
     "description": "Geant4 NIST Material: G4_URANIUM_DICARBIDE"
   },
   "G4 Material: G4_URANIUM_MONOCARBIDE": {
     "prefix": "G4_URANIUM_MONOCARBIDE",
-    "body": [
-      "G4_URANIUM_MONOCARBIDE"
-    ],
+    "body": ["G4_URANIUM_MONOCARBIDE"],
     "description": "Geant4 NIST Material: G4_URANIUM_MONOCARBIDE"
   },
   "G4 Material: G4_URANIUM_OXIDE": {
     "prefix": "G4_URANIUM_OXIDE",
-    "body": [
-      "G4_URANIUM_OXIDE"
-    ],
+    "body": ["G4_URANIUM_OXIDE"],
     "description": "Geant4 NIST Material: G4_URANIUM_OXIDE"
   },
   "G4 Material: G4_UREA": {
     "prefix": "G4_UREA",
-    "body": [
-      "G4_UREA"
-    ],
+    "body": ["G4_UREA"],
     "description": "Geant4 NIST Material: G4_UREA"
   },
   "G4 Material: G4_V": {
     "prefix": "G4_V",
-    "body": [
-      "G4_V"
-    ],
+    "body": ["G4_V"],
     "description": "Geant4 NIST Material: G4_V"
   },
   "G4 Material: G4_VALINE": {
     "prefix": "G4_VALINE",
-    "body": [
-      "G4_VALINE"
-    ],
+    "body": ["G4_VALINE"],
     "description": "Geant4 NIST Material: G4_VALINE"
   },
   "G4 Material: G4_VITON": {
     "prefix": "G4_VITON",
-    "body": [
-      "G4_VITON"
-    ],
+    "body": ["G4_VITON"],
     "description": "Geant4 NIST Material: G4_VITON"
   },
   "G4 Material: G4_W": {
     "prefix": "G4_W",
-    "body": [
-      "G4_W"
-    ],
+    "body": ["G4_W"],
     "description": "Geant4 NIST Material: G4_W"
   },
   "G4 Material: G4_WATER": {
     "prefix": "G4_WATER",
-    "body": [
-      "G4_WATER"
-    ],
+    "body": ["G4_WATER"],
     "description": "Geant4 NIST Material: G4_WATER"
   },
   "G4 Material: G4_WATER_VAPOR": {
     "prefix": "G4_WATER_VAPOR",
-    "body": [
-      "G4_WATER_VAPOR"
-    ],
+    "body": ["G4_WATER_VAPOR"],
     "description": "Geant4 NIST Material: G4_WATER_VAPOR"
   },
   "G4 Material: G4_XYLENE": {
     "prefix": "G4_XYLENE",
-    "body": [
-      "G4_XYLENE"
-    ],
+    "body": ["G4_XYLENE"],
     "description": "Geant4 NIST Material: G4_XYLENE"
   },
   "G4 Material: G4_Xe": {
     "prefix": "G4_Xe",
-    "body": [
-      "G4_Xe"
-    ],
+    "body": ["G4_Xe"],
     "description": "Geant4 NIST Material: G4_Xe"
   },
   "G4 Material: G4_Y": {
     "prefix": "G4_Y",
-    "body": [
-      "G4_Y"
-    ],
+    "body": ["G4_Y"],
     "description": "Geant4 NIST Material: G4_Y"
   },
   "G4 Material: G4_Yb": {
     "prefix": "G4_Yb",
-    "body": [
-      "G4_Yb"
-    ],
+    "body": ["G4_Yb"],
     "description": "Geant4 NIST Material: G4_Yb"
   },
   "G4 Material: G4_Zn": {
     "prefix": "G4_Zn",
-    "body": [
-      "G4_Zn"
-    ],
+    "body": ["G4_Zn"],
     "description": "Geant4 NIST Material: G4_Zn"
   },
   "G4 Material: G4_Zr": {
     "prefix": "G4_Zr",
-    "body": [
-      "G4_Zr"
-    ],
+    "body": ["G4_Zr"],
     "description": "Geant4 NIST Material: G4_Zr"
   },
   "G4 Material: G4_lAr": {
     "prefix": "G4_lAr",
-    "body": [
-      "G4_lAr"
-    ],
+    "body": ["G4_lAr"],
     "description": "Geant4 NIST Material: G4_lAr"
   },
   "G4 Material: G4_lBr": {
     "prefix": "G4_lBr",
-    "body": [
-      "G4_lBr"
-    ],
+    "body": ["G4_lBr"],
     "description": "Geant4 NIST Material: G4_lBr"
   },
   "G4 Material: G4_lH2": {
     "prefix": "G4_lH2",
-    "body": [
-      "G4_lH2"
-    ],
+    "body": ["G4_lH2"],
     "description": "Geant4 NIST Material: G4_lH2"
   },
   "G4 Material: G4_lKr": {
     "prefix": "G4_lKr",
-    "body": [
-      "G4_lKr"
-    ],
+    "body": ["G4_lKr"],
     "description": "Geant4 NIST Material: G4_lKr"
   },
   "G4 Material: G4_lN2": {
     "prefix": "G4_lN2",
-    "body": [
-      "G4_lN2"
-    ],
+    "body": ["G4_lN2"],
     "description": "Geant4 NIST Material: G4_lN2"
   },
   "G4 Material: G4_lO2": {
     "prefix": "G4_lO2",
-    "body": [
-      "G4_lO2"
-    ],
+    "body": ["G4_lO2"],
     "description": "Geant4 NIST Material: G4_lO2"
   },
   "G4 Material: G4_lPROPANE": {
     "prefix": "G4_lPROPANE",
-    "body": [
-      "G4_lPROPANE"
-    ],
+    "body": ["G4_lPROPANE"],
     "description": "Geant4 NIST Material: G4_lPROPANE"
   },
   "G4 Material: G4_lXe": {
     "prefix": "G4_lXe",
-    "body": [
-      "G4_lXe"
-    ],
+    "body": ["G4_lXe"],
     "description": "Geant4 NIST Material: G4_lXe"
   },
   "Color: red": {
     "prefix": "red",
-    "body": [
-      "1 0 0"
-    ],
+    "body": ["1 0 0"],
     "description": "RGB values for red: 1 0 0"
   },
   "Color: green": {
     "prefix": "green",
-    "body": [
-      "0 1 0"
-    ],
+    "body": ["0 1 0"],
     "description": "RGB values for green: 0 1 0"
   },
   "Color: blue": {
     "prefix": "blue",
-    "body": [
-      "0 0 1"
-    ],
+    "body": ["0 0 1"],
     "description": "RGB values for blue: 0 0 1"
   },
   "Color: yellow": {
     "prefix": "yellow",
-    "body": [
-      "1 1 0"
-    ],
+    "body": ["1 1 0"],
     "description": "RGB values for yellow: 1 1 0"
   },
   "Color: magenta": {
     "prefix": "magenta",
-    "body": [
-      "1 0 1"
-    ],
+    "body": ["1 0 1"],
     "description": "RGB values for magenta: 1 0 1"
   },
   "Color: cyan": {
     "prefix": "cyan",
-    "body": [
-      "0 1 1"
-    ],
+    "body": ["0 1 1"],
     "description": "RGB values for cyan: 0 1 1"
   },
   "Color: white": {
     "prefix": "white",
-    "body": [
-      "1 1 1"
-    ],
+    "body": ["1 1 1"],
     "description": "RGB values for white: 1 1 1"
   },
   "Color: black": {
     "prefix": "black",
-    "body": [
-      "0 0 0"
-    ],
+    "body": ["0 0 0"],
     "description": "RGB values for black: 0 0 0"
   },
   "Color: gray": {
     "prefix": "gray",
-    "body": [
-      "0.5 0.5 0.5"
-    ],
+    "body": ["0.5 0.5 0.5"],
     "description": "RGB values for gray: 0.5 0.5 0.5"
   },
   "Color: grey": {
     "prefix": "grey",
-    "body": [
-      "0.5 0.5 0.5"
-    ],
+    "body": ["0.5 0.5 0.5"],
     "description": "RGB values for grey: 0.5 0.5 0.5"
   },
   "Color: orange": {
     "prefix": "orange",
-    "body": [
-      "1.0 0.65 0.0"
-    ],
+    "body": ["1.0 0.65 0.0"],
     "description": "RGB values for orange: 1.0 0.65 0.0 (CSS definition)"
   },
   "Color: purple": {
     "prefix": "purple",
-    "body": [
-      "0.5 0 0.5"
-    ],
+    "body": ["0.5 0 0.5"],
     "description": "RGB values for purple: 0.5 0 0.5"
   },
   "Color: brown": {
     "prefix": "brown",
-    "body": [
-      "0.6 0.4 0.2"
-    ],
+    "body": ["0.6 0.4 0.2"],
     "description": "RGB values for brown: 0.6 0.4 0.2"
   },
   "Color: azure": {
     "prefix": "azure",
-    "body": [
-      "0.94 1.0 1.0"
-    ],
+    "body": ["0.94 1.0 1.0"],
     "description": "RGB values for azure: 0.94 1.0 1.0 (CSS definition)"
   },
   "Color: aqua": {
     "prefix": "aqua",
-    "body": [
-      "0.0 1.0 1.0"
-    ],
+    "body": ["0.0 1.0 1.0"],
     "description": "RGB values for aqua: 0.0 1.0 1.0 (CSS definition)"
   },
   "Color: coral": {
     "prefix": "coral",
-    "body": [
-      "1.0 0.5 0.31"
-    ],
+    "body": ["1.0 0.5 0.31"],
     "description": "RGB values for coral: 1.0 0.5 0.31 (CSS definition)"
   },
   "Color: khaki": {
     "prefix": "khaki",
-    "body": [
-      "0.94 0.9 0.55"
-    ],
+    "body": ["0.94 0.9 0.55"],
     "description": "RGB values for khaki: 0.94 0.9 0.55 (CSS definition)"
   },
   "Color: lime": {
     "prefix": "lime",
-    "body": [
-      "0.0 1.0 0.0"
-    ],
+    "body": ["0.0 1.0 0.0"],
     "description": "RGB values for lime: 0.0 1.0 0.0 (CSS definition)"
   },
   "Color: maroon": {
     "prefix": "maroon",
-    "body": [
-      "0.5 0.0 0.0"
-    ],
+    "body": ["0.5 0.0 0.0"],
     "description": "RGB values for maroon: 0.5 0.0 0.0 (CSS definition)"
   },
   "Color: linen": {
     "prefix": "linen",
-    "body": [
-      "0.98 0.94 0.9"
-    ],
+    "body": ["0.98 0.94 0.9"],
     "description": "RGB values for linen: 0.98 0.94 0.9 (CSS definition)"
   },
   "Color: navy": {
     "prefix": "navy",
-    "body": [
-      "0.0 0.0 0.5"
-    ],
+    "body": ["0.0 0.0 0.5"],
     "description": "RGB values for navy: 0.0 0.0 0.5 (CSS definition)"
   },
   "Color: olive": {
     "prefix": "olive",
-    "body": [
-      "0.5 0.5 0.0"
-    ],
+    "body": ["0.5 0.5 0.0"],
     "description": "RGB values for olive: 0.5 0.5 0.0 (CSS definition)"
   },
   "Color: orchid": {
     "prefix": "orchid",
-    "body": [
-      "0.85 0.44 0.84"
-    ],
+    "body": ["0.85 0.44 0.84"],
     "description": "RGB values for orchid: 0.85 0.44 0.84 (CSS definition)"
   },
   "Color: peru": {
     "prefix": "peru",
-    "body": [
-      "0.8 0.52 0.25"
-    ],
+    "body": ["0.8 0.52 0.25"],
     "description": "RGB values for peru: 0.8 0.52 0.25 (CSS definition)"
   },
   "Color: pink": {
     "prefix": "pink",
-    "body": [
-      "1.0 0.75 0.8"
-    ],
+    "body": ["1.0 0.75 0.8"],
     "description": "RGB values for pink: 1.0 0.75 0.8 (CSS definition)"
   },
   "Color: plum": {
     "prefix": "plum",
-    "body": [
-      "0.87 0.63 0.87"
-    ],
+    "body": ["0.87 0.63 0.87"],
     "description": "RGB values for plum: 0.87 0.63 0.87 (CSS definition)"
   },
   "Color: sienna": {
     "prefix": "sienna",
-    "body": [
-      "0.63 0.32 0.18"
-    ],
+    "body": ["0.63 0.32 0.18"],
     "description": "RGB values for sienna: 0.63 0.32 0.18 (CSS definition)"
   },
   "Color: silver": {
     "prefix": "silver",
-    "body": [
-      "0.75 0.75 0.75"
-    ],
+    "body": ["0.75 0.75 0.75"],
     "description": "RGB values for silver: 0.75 0.75 0.75 (CSS definition)"
   },
   "Color: tan": {
     "prefix": "tan",
-    "body": [
-      "0.82 0.71 0.55"
-    ],
+    "body": ["0.82 0.71 0.55"],
     "description": "RGB values for tan: 0.82 0.71 0.55 (CSS definition)"
   },
   "Color: violet": {
     "prefix": "violet",
-    "body": [
-      "0.93 0.51 0.93"
-    ],
+    "body": ["0.93 0.51 0.93"],
     "description": "RGB values for violet: 0.93 0.51 0.93 (CSS definition)"
   },
   "Color: wheat": {
     "prefix": "wheat",
-    "body": [
-      "0.96 0.87 0.7"
-    ],
+    "body": ["0.96 0.87 0.7"],
     "description": "RGB values for wheat: 0.96 0.87 0.7 (CSS definition)"
   }
 }
