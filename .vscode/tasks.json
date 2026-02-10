@@ -1,0 +1,91 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "NPM: Install Dependencies",
+      "type": "shell",
+      "command": "npm install",
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+      }
+    },
+    {
+      "label": "NPM: Reformat with Prettier",
+      "type": "shell",
+      "command": "npm run format",
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+      }
+    },
+    {
+      "label": "NPM: Build VSIX Package",
+      "type": "shell",
+      "command": "npm run package",
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+      }
+    },
+    {
+      "label": "NPM: Increment Version",
+      "type": "shell",
+      "command": "npm version ${input:releaseType} -m \"${input:commitMessage}\"",
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "NPM: GitHub Release",
+      "type": "shell",
+      "command": "git push origin main --tags",
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "releaseType",
+      "type": "pickString",
+      "description": "What type of release is this?",
+      "options": ["patch", "minor", "major"],
+      "default": "patch"
+    },
+    {
+      "id": "commitMessage",
+      "type": "promptString",
+      "description": "Enter your release message (%s will be replaced by version)",
+      "default": "Release version %s"
+    }
+  ]
+}
