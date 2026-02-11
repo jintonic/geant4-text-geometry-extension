@@ -14,6 +14,10 @@ All notable changes to the "Geant4 Text Geometry" extension will be documented i
 - **Issue & PR Templates**: Standardized templates for bug reports, feature and pull requests.
 - **Developer Experience**: Integrated Prettier for automatic code formatting to ensure consistent style.
 
+### Changed
+
+- **Language Detection**: Improved language detection for Geant4 Text Geometry.
+
 ## [1.0.0] - 2026-01-25
 
 - Initial release.
