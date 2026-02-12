@@ -17,34 +17,6 @@
       }
     },
     {
-      "label": "NPM: Reformat with Prettier",
-      "type": "shell",
-      "command": "npm run format",
-      "group": "build",
-      "problemMatcher": [],
-      "presentation": {
-        "echo": true,
-        "reveal": "silent",
-        "panel": "shared",
-        "showReuseMessage": false,
-        "clear": true
-      }
-    },
-    {
-      "label": "NPM: Build VSIX Package",
-      "type": "shell",
-      "command": "npm run package",
-      "group": "build",
-      "problemMatcher": [],
-      "presentation": {
-        "echo": true,
-        "reveal": "always",
-        "panel": "shared",
-        "showReuseMessage": false,
-        "clear": true
-      }
-    },
-    {
       "label": "NPM: Increment Version",
       "type": "shell",
       "command": "npm version ${input:releaseType} -m \"${input:commitMessage}\"",
