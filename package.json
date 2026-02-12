@@ -9,9 +9,18 @@
   },
   "scripts": {
     "package": "vsce package",
-    "publish": "ovsx publish",
+    "deploy": "ovsx publish",
     "release": "npm version patch && git push origin main --tags",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "src/**/*.json": [
+      "prettier --write"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
   },
   "configurationDefaults": {
     "[geant4-tg]": {
@@ -68,6 +77,8 @@
   },
   "devDependencies": {
     "@vscode/vsce": "^3.7.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
     "ovsx": "^0.10.7",
     "prettier": "^3.2.5"
   }

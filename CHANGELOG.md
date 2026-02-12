@@ -2,6 +2,20 @@
 
 All notable changes to the "Geant4 Text Geometry" extension will be documented in this file.
 
+## [1.0.2] - 2026-02-13
+
+### Added
+
+- **Pre-commit Hooks**: Added Husky pre-commit hooks to automatically format code and check for linting issues before committing.
+
+### Changed
+
+- **Development Workflow**: Updated `Development Workflow` section in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+### Removed
+
+- **VS Code Tasks**: Removed a few tasks from [.vscode/tasks.json](.vscode/tasks.json) that can be accessed via "NPM Scripts" in the Explorer view.
+
 ## [1.0.1] - 2026-02-10
 
 ### Fixed

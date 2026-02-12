@@ -32,18 +32,21 @@ We follow a standard "Fork-and-Pull" workflow.
 
 1. **Fork** the repository to your own GitHub account.
 2. **Clone** your fork locally.
-3. **Create a branch** for your feature or fix:
+3. **Install** dependencies inside the working directory by running `npm i` (make sure that your computer has the required software installed, see [Prerequisites](#prerequisites)).
+4. **Enable** "NPM Scripts" section in VS Code Explorer by clicking "..." in the Explorer view and selecting "NPM Scripts". Run "package" script to test if you can build the vsix file.
+5. **Create a branch** for your feature or fix:
    ```bash
    git checkout -b feat/add-new-snippets
    # or
    git checkout -b fix/fix-typo
    git checkout -b docs/update-readme
    ```
-4. **Make your changes**
-5. **Test your changes** locally using the "Extension Development Host" (<kbd>F5</kbd> in VS Code and its derivatives)
-6. **Commit** your changes.
-7. **Push** your changes to your fork.
-8. **Create a Pull Request** from your fork to the main repository.
+6. **Make your changes**. To add features such as IntelliSense, hovers and validators check out the VS Code extenders documentation at <https://code.visualstudio.com/docs>.
+7. **Test your changes** locally using the "Extension Development Host" (<kbd>F5</kbd>), and then use <kbd>Ctrl+R</kbd> (or <kbd>Cmd+R</kbd> on Mac) to reload the testing window.
+8. **Run** "package" script again to check what's included in the vsix file.
+9. **Commit** your changes, which will trigger formatting and linting in the background.
+10. **Push** your changes to your fork.
+11. **Create a Pull Request** from your fork to the main repository.
 
 ### Prerequisites
 
@@ -57,18 +60,15 @@ _Tip_: Use [nvm][] (macOS/Linux) or [nvm-windows][] to manage Node versions easi
 
 ## Publishing the Extension (For Maintainers Only)
 
-### Recommand Workflow
+### Recommended Workflow
 
 Press <kbd>Ctrl/CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> in VS Code or one of its derivatives to run the extension publishing workflow in the following order:
 
-1. **NPM: Install Dependencies** (This will install the dependencies in the node_modules folder)
-2. **NPM: Reformat with Prettier** (This will format the code with Prettier)
-3. **NPM: Build VSIX Package** (This will print files included in the VSIX package)
-4. **NPM: Increment Version** (This will bump the version in package.json and create an annotated git tag)
-5. **NPM: GitHub Release** (This will trigger the GitHub Action to publish the extension to the Open VSX Registry)
-6. rerun **NPM: Build VSIX Package**, and upload the VSIX package to the corresponding GitHub [Release][].
+1. **NPM: Increment Version** (This will bump the version in package.json and create an annotated git tag)
+2. **NPM: GitHub Release** (This will trigger a [GitHub Action](#github-action) to publish the extension to the [Open VSX Registry][])
+3. rerun the "package" script, and upload the VSIX package to the corresponding GitHub [Release][] as an [asset](#github-release-asset).
 
-### Automatic Publishing (Recommended)
+### GitHub Action
 
 This repository is configured with a GitHub Action that automatically publishes to the [Open VSX Registry][] whenever a new version tag is pushed.
 
@@ -85,11 +85,9 @@ This repository is configured with a GitHub Action that automatically publishes 
     npm version patch -m "Release version %s"
     ```
 
-2.  **Push the changes and tags**:
-    `bash
-git push origin main --tags
-`
-    _Note: Ensure your working directory is clean before running `npm version`. This command will update `package.json`, commit the change, and create an annotated tag for you._
+2.  **Push the changes and tags**: `git push origin main --tags`
+
+_Note: Ensure your working directory is clean before running `npm version`. This command will update `package.json`, commit the change, and create an annotated tag for you._
 
 ### Manual Publishing
 
@@ -97,8 +95,7 @@ You can also publish manually from your terminal using the local version of `ovs
 
 ```bash
 # Using the local project scripts
-npm run publish -- -p <YOUR_OVSX_TOKEN>
-
+npm run deploy -- -p <YOUR_OVSX_TOKEN>
 # Or using npx
 npx ovsx publish -p <YOUR_OVSX_TOKEN>
 ```
@@ -116,7 +113,7 @@ This project pins a specific version of the `ovsx` publisher in `package.json` t
   npm install ovsx@latest --save-dev
   ```
 
-### Building the Extension as GitHub Release Asset
+### GitHub Release Asset
 
 To build the [VSIX][] package locally, run the package script:
 
