@@ -26,6 +26,23 @@ Standard VS Code uses the Microsoft Marketplace and does not search Open VSX by 
 
 Simply open any file with the `.tg` extension to enable Geant4 Text Geometry support.
 
+### 🛠 Troubleshooting: File Detection
+
+VS Code might identify `.tg` files as Shell Script. If your Geant4 text geometry files are not being correctly colorized, you can force the association in two ways:
+
+1. The Quick Fix (Single File)
+   - Click on the Language Mode in the Status Bar (bottom right corner, it likely says "Shell Script").
+   - Select "Configure File Association for '.tg'..." from the top of the list.
+   - Select "Geant4 Text Geometry".
+2. The Permanent Fix (Global)
+   - Add the following to your settings.json (accessible via Ctrl+Shift+P -> Preferences: Open User Settings (JSON)):
+
+     ```json
+     "files.associations": {
+       "*.tg": "geant4-tg"
+     }
+     ```
+
 ### Syntax Overview
 
 - **Tags**: Start with `:` (e.g., `:solid`, `:volu`, `:mate`).
