@@ -21,4 +21,4 @@ jobs:
         run: npm install
 
       - name: Publish to Open VSX
-        run: npm run publish -- -p ${{ secrets.OVSX_TOKEN }}
+        run: npm run deploy -- -p ${{ secrets.OVSX_TOKEN }}
