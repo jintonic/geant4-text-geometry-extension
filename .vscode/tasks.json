@@ -33,7 +33,7 @@
     {
       "label": "NPM: GitHub Release",
       "type": "shell",
-      "command": "git push origin main --tags",
+      "command": "git push origin HEAD --follow-tags",
       "group": "build",
       "problemMatcher": [],
       "presentation": {
