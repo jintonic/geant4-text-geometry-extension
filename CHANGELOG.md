@@ -6,6 +6,7 @@ All notable changes to the "Geant4 Text Geometry" extension will be documented i
 
 ### Added
 
+- **Troubleshooting**: Added a troubleshooting section to [README.md](README.md) to help users with file detection issues.
 - **Pre-commit Hooks**: Added Husky pre-commit hooks to automatically format code and check for linting issues before committing.
 
 ### Changed
